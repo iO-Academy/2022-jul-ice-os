@@ -5,7 +5,7 @@ import screenfull from "screenfull";
 
 const FullScreenButton = ():JSX.Element => {
 
-    const root = document.getElementById('root');
+   const root = document.getElementById('root');
 
    const makeFullscreen = () => {
         screenfull.toggle(root!);
@@ -13,7 +13,7 @@ const FullScreenButton = ():JSX.Element => {
 
     return (
         <div className="FullScreenButton">
-            <i onClick={makeFullscreen} className="fa-solid fa-maximize" id="fullscreenButton"></i>
+            <i onClick={makeFullscreen} className="fa-solid fa-maximize fullscreenButton" id="fullscreenButton"></i>
         </div>
     )
 }
