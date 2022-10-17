@@ -4,6 +4,8 @@
   height: 50px;
   bottom: 0;
   background-color: #ACB5C7;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=TaskBar.css.map */

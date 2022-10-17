@@ -1,6 +1,7 @@
+
+import './clock.css'
+
 const Clock = ():JSX.Element => {
-
-
 
     const currentTime = () => {
         const clockDisplay = document.getElementById('clockDisplay')
