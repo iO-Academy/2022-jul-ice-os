@@ -1,5 +1,4 @@
 import Clock from './Clock'
-import FullScreenButton from "./FullScreenButton";
 import './UtilitiesHolder.css'
 
 const UtilitiesHolder = ():JSX.Element => {
