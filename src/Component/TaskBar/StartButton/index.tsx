@@ -4,7 +4,8 @@ const StartButton = (): JSX.Element => {
 
     return (
         <button className="startButton">
-            Start
+            <img src="" />
+            <p>Start</p>
         </button>
     )
 }
