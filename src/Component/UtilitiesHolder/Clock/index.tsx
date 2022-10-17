@@ -1,4 +1,3 @@
-
 import './clock.css'
 
 const Clock = ():JSX.Element => {
