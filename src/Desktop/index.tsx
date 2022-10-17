@@ -5,7 +5,7 @@ const Desktop = (): JSX.Element => {
 
 
     return (
-        <main  className={"desktop"}>
+        <main  className="desktop">
 
         </main>
     )
