@@ -1,7 +1,8 @@
-const TaskBar = () => {
+import "./TaskBar.css"
+
+const TaskBar = ():JSX.Element  => {
     return (
         <div className="TaskBar">
-
         </div>
     )
 }
