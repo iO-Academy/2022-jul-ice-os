@@ -6,6 +6,7 @@ const StartButton = (): JSX.Element => {
         <button className="startButton">
             <img className="startButtonImage" src={"../../../assets/Desktop/Images/icebergStartMenuIcon.png"} alt="Iceberg start menu logo" />
             <p className="startButtonText">Start</p>
+
         </button>
     )
 }
