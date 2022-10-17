@@ -1,6 +1,6 @@
 import './StartButton.css';
 
-const StartButton = (): JSX.Element => {
+const StartButton = () => {
 
     return (
         <button className="startButton">

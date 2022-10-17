@@ -1,6 +1,6 @@
 import './clock.css'
 
-const Clock = ():JSX.Element => {
+const Clock = () => {
 
     const currentTime = () => {
         const clockDisplay = document.getElementById('clockDisplay')
@@ -9,7 +9,7 @@ const Clock = ():JSX.Element => {
         let minutes = date.getMinutes();
         let seconds = date.getSeconds();
         let time = `${hours}:${minutes}:${seconds}`;
-        clockDisplay!.innerText = time;
+        clockDisplay.innerText = time;
     }
 
     setInterval(currentTime, 1000);

@@ -3,12 +3,12 @@ import screenfull from "screenfull";
 
 
 
-const FullScreenButton = ():JSX.Element => {
+const FullScreenButton = () => {
 
    const root = document.getElementById('root');
 
    const makeFullscreen = () => {
-        screenfull.toggle(root!);
+        screenfull.toggle(root);
     }
 
     return (

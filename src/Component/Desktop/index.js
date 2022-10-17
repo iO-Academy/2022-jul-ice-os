@@ -1,8 +1,7 @@
 import './Desktop.css'
 // TODO Big D for desktop, also big I for index??
 
-const Desktop = (): JSX.Element => {
-
+const Desktop = ()=> {
 
     return (
         <main  className="desktop">

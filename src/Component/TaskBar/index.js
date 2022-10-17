@@ -4,7 +4,7 @@ import UtilitiesHolder from "../UtilitiesHolder";
 
 
 
-const TaskBar = ():JSX.Element  => {
+const TaskBar = () => {
     return (
         <div className="TaskBar">
             <StartButton />
