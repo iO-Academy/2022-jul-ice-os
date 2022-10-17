@@ -3,7 +3,7 @@ import './StartButton.css';
 const StartButton = (): JSX.Element => {
 
     return (
-        <button>
+        <button className="startButton">
             Start
         </button>
     )

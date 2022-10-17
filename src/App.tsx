@@ -6,7 +6,7 @@ import TaskBar from "./Component/TaskBar";
 function App() {
   return (
     <div className="App">
-      <TaskBar/>
+      <TaskBar />
     </div>
   );
 }
