@@ -6,7 +6,6 @@ import './UtilitiesHolder.css'
 const UtilitiesHolder = ():JSX.Element => {
     return (
         <div className="UtilitiesHolder">
-            <FullScreenButton />
             <Clock />
         </div>
     )
