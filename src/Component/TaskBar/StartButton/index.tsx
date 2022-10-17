@@ -4,8 +4,9 @@ const StartButton = (): JSX.Element => {
 
     return (
         <button className="startButton">
-            <img src="" />
-            <p>Start</p>
+            <img className="startButtonImage" src={"../../../assets/Desktop/Images/icebergStartMenuIcon.png"} alt="Iceberg start menu logo" />
+            <p className="startButtonText">Start</p>
+
         </button>
     )
 }

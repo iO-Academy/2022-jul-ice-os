@@ -1,3 +1,28 @@
+.startButton {
+  height: 100%;
+  width: 10%;
+  background-color: #1B861D;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
+.startButton:hover {
+  background-color: #157f16;
+  box-shadow: inset 0 10px 0 0 #136d17;
+}
 
-/*# sourceMappingURL=StartButton.css.map */
+.startButtonImage {
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+
+.startButtonText {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 10px 0 0;
+}
