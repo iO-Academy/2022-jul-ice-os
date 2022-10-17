@@ -2,18 +2,27 @@ import './clock.css'
 
 const Clock = ():JSX.Element => {
 
+    function addZero(timeDigit: number): string|number {
+        if (timeDigit < 10) {
+            const timeString: string = "0" + timeDigit
+            return timeString
+        } else {
+                return timeDigit
+        }
+
+    }
+
     const currentTime = () => {
         const clockDisplay = document.getElementById('clockDisplay')
-        let date = new Date();
-        let hours = date.getHours();
-        let minutes = date.getMinutes();
-        let seconds = date.getSeconds();
-        let time = `${hours}:${minutes}:${seconds}`;
-        clockDisplay!.innerText = time;
+        let date: Date = new Date()
+        let hours: string|number = addZero(date.getHours())
+        let minutes: string|number = addZero(date.getMinutes())
+        let time: string|number = hours + ':' + minutes
+        clockDisplay!.innerText = time
+
     }
 
     setInterval(currentTime, 1000);
-
 
     return (
         <div className="clock">
