@@ -32,7 +32,7 @@ const StartButton = (): JSX.Element => {
                 <ul>text</ul>
                 <ul>text</ul>
                 <ul>text</ul>
-                <div className={"menuSpacer"}></div>
+                <div className={"menuSpacer2"}></div>
             </div>
         </div>
     )

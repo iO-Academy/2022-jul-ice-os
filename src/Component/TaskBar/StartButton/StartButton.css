@@ -39,9 +39,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 0 15px 0 0;
 }
 
 .menuSpacer {
+  height: 40px;
+  background-color: #0D8DEA;
+  box-shadow: inset 0px 0px 10px 10px rgba(28, 107, 218, 0.7);
+  border-radius: 0 15px 0 0;
+}
+
+.menuSpacer2 {
   height: 40px;
   background-color: #0D8DEA;
   box-shadow: inset 0px 0px 10px 10px rgba(28, 107, 218, 0.7);
