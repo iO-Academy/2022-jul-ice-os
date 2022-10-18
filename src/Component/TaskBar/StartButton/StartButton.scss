@@ -1,6 +1,8 @@
 .startButton {
-  height: 100%;
-  width: 8%;
+  height: 47px;
+  width: 110px;
+  bottom: 1px;
+  position: fixed;
   background-color: #1B861D;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
@@ -25,4 +27,32 @@
   font-weight: bold;
   font-size: 22px;
   margin: 10px 0 0;
+}
+
+.menuDisplay {
+  width: 300px;
+  height: 300px;
+  background-color: #FFFFFF;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  border-radius: 0 15px 0 0;
+}
+
+.menuSpacer {
+  height: 40px;
+  background-color: #0D8DEA;
+  box-shadow: inset 0px 0px 10px 10px rgba(28, 107, 218, 0.7);
+  border-radius: 0 15px 0 0;
+  width: 305px;
+  top: 0;
+}
+.menuSpacer2 {
+  height: 40px;
+  background-color: #0D8DEA;
+  box-shadow: inset 0px 0px 10px 10px rgba(28, 107, 218, 0.7);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
