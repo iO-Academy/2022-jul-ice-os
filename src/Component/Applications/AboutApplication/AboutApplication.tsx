@@ -1,6 +1,6 @@
 import Draggable from 'react-draggable'
 import './AboutApplication.css'
-import Header from "../SubComponents/Header";
+import Header from "../SubComponents/Header/Header";
 
 const AboutApplication = () => {
     return (
