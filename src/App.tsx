@@ -15,7 +15,9 @@ function App() {
                  setAboutIsRunning={setAboutIsRunning}
                  setAboutIsOpen={setAboutIsOpen}/>
         <TaskBar setAboutIsOpen={setAboutIsOpen}
-                 setAboutIsRunning={setAboutIsRunning}/>
+                 setAboutIsRunning={setAboutIsRunning}
+                 aboutIsOpen={aboutIsOpen}
+                 aboutIsRunning={aboutIsRunning}/>
     </div>
   );
 }
