@@ -5,8 +5,11 @@ import MaximizeButton from "../Buttons/MaximizeButton/MaximizeButton";
 
 interface HeaderProps {
     ApplicationName: string
+    ApplicationIcon: string
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    setAboutMaximize: Function
+    aboutMaximize: boolean
 }
 
 
@@ -15,6 +18,7 @@ const Header = (props :HeaderProps) => {
     return (
         <header className={"handle"}>
             <div className={"infoContainer"}>
+                <img className={"aboutIcon"} src={props.ApplicationIcon} alt={"about icon"} />
                 <h6 className={"headerTitle"}>{props.ApplicationName}</h6>
             </div>
             <div className={"buttonContainer"}>
