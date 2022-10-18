@@ -1,9 +1,13 @@
 import Draggable from 'react-draggable'
 import './AboutApplication.css'
-import Header from "../SubComponents/Header/Header";
+import Header from "./SubComponents/Header/Header";
 
+interface AboutApplicationProps {
+    setAboutIsOpen: Function
+    setAboutIsRunning: Function
+}
 
-const AboutApplication = () => {
+const AboutApplication = (props :AboutApplicationProps) => {
     return (
 
         <Draggable
@@ -12,7 +16,7 @@ const AboutApplication = () => {
             grid={[25, 25]}
             scale={1}>
             <div className={"draggable"}>
-              <Header ApplicationName={"About"} />
+              <Header ApplicationName={"About"} setAboutIsOpen={props.setAboutIsOpen} setAboutIsRunning={props.setAboutIsRunning}/>
             </div>
         </Draggable>
     )

@@ -5,6 +5,8 @@ import MaximizeButton from "../Buttons/MaximizeButton/MaximizeButton";
 
 interface HeaderProps {
     ApplicationName: string
+    setAboutIsOpen: Function
+    setAboutIsRunning: Function
 }
 
 
@@ -16,9 +18,9 @@ const Header = (props :HeaderProps) => {
                 <h6 className={"headerTitle"}>{props.ApplicationName}</h6>
             </div>
             <div className={"buttonContainer"}>
-                <MinimizeButton />
+                <MinimizeButton setAboutIsOpen={props.setAboutIsOpen}/>
                 <MaximizeButton />
-                <CloseButton />
+                <CloseButton setAboutIsOpen={props.setAboutIsOpen} setAboutIsRunning={props.setAboutIsRunning} />
             </div>
 
         </header>

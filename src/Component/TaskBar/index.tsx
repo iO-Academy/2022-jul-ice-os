@@ -2,12 +2,15 @@ import "./TaskBar.css"
 import StartButton from './StartButton'
 import UtilitiesHolder from "../UtilitiesHolder";
 
+interface TaskBarProps {
+    setAboutIsOpen: Function
+    setAboutIsRunning: Function
+}
 
-
-const TaskBar = ():JSX.Element  => {
+const TaskBar = (props: TaskBarProps):JSX.Element  => {
     return (
         <div className="TaskBar">
-            <StartButton />
+            <StartButton setAboutIsOpen={props.setAboutIsOpen} setAboutIsRunning={props.setAboutIsRunning} />
             <UtilitiesHolder />
         </div>
     )
