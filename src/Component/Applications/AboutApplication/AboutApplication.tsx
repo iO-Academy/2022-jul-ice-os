@@ -1,6 +1,6 @@
 import Draggable from 'react-draggable'
 import './AboutApplication.css'
-import Header from "../SubComponents/Header/Header";
+import Header from "./SubComponents/Header/Header";
 
 interface AboutApplicationProps {
     setAboutIsOpen: Function

@@ -18,7 +18,7 @@ const Header = (props :HeaderProps) => {
                 <h6 className={"headerTitle"}>{props.ApplicationName}</h6>
             </div>
             <div className={"buttonContainer"}>
-                <MinimizeButton />
+                <MinimizeButton setAboutIsOpen={props.setAboutIsOpen}/>
                 <MaximizeButton />
                 <CloseButton setAboutIsOpen={props.setAboutIsOpen} setAboutIsRunning={props.setAboutIsRunning} />
             </div>
