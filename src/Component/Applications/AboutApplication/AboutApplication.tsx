@@ -7,7 +7,7 @@ const AboutApplication = () => {
 
         <Draggable
             handle=".handle"
-            defaultPosition={{x: 0, y: 50}}
+            defaultPosition={{x: 50, y: 50}}
             grid={[25, 25]}
             scale={1}>
             <div className={"draggable"}>
