@@ -9,7 +9,7 @@ const Header = (props :HeaderProps) => {
 
     return (
         <header className={"handle"}>
-            <h2 className={"headerTitle"}>{props.ApplicationName}</h2>
+            <h6 className={"headerTitle"}>{props.ApplicationName}</h6>
         </header>
     )
 }
