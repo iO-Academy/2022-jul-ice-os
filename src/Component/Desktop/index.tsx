@@ -2,12 +2,17 @@ import './Desktop.css'
 // TODO Big D for desktop, also big I for index??
 import AboutApplication from "../Applications/AboutApplication/AboutApplication";
 
-const Desktop = (): JSX.Element => {
+interface DesktopProps  {
+    aboutIsOpen: boolean
+    setAboutIsRunning: Function
+}
+const Desktop = (props :DesktopProps): JSX.Element => {
 
 
     return (
         <main  className="desktop">
-            <AboutApplication />
+            {props.aboutIsOpen ? <AboutApplication />  : ""}
+            {props.aboutIsOpen ? props.setAboutIsRunning(true) : ""}
         </main>
     )
 }
