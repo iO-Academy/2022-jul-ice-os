@@ -1,7 +1,9 @@
+import './CloseButton.css'
+
 const CloseButton = () => {
 
     const handleClose = () => {
-        console.log("closed!");
+
     }
 
     return (

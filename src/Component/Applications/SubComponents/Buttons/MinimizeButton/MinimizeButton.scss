@@ -1,12 +1,10 @@
-.closeButton {
+.minimizeButton {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 10px;
-  margin-right: 1px;
-  background-color: #e1532f;
+  margin: 2px;
+  background-color: #2f6bf2;
   border: 2px solid white;
   color: white;
-  font-weight: bold;
 }

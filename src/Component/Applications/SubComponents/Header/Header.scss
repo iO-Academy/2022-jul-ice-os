@@ -8,9 +8,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .headerTitle {
   margin: 5px;
   font-size: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
 }
