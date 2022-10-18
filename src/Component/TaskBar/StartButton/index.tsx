@@ -29,7 +29,7 @@ const StartButton = (): JSX.Element => {
                     <img className={"menuImage"} src={"../../../assets/Desktop/Images/menuImage.png"} alt="Penguin in a igloo" />
                     <p className={"userInMenu"}>Nico</p>
                 </div>
-                <div >
+                <div>
                 <ul className={"menuList"}>
                     <img className={"menuListImage"} src={"../../../assets/Desktop/Images/AboutImage.png"} alt="Penguin reading a book"/>
                     <p className={"menuListText"}>About</p>

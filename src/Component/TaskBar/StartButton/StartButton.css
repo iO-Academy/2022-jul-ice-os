@@ -1,6 +1,6 @@
 .startButton {
   height: 47px;
-  width: 110px;
+  width: 120px;
   bottom: 1px;
   position: fixed;
   background-color: #1B861D;
@@ -22,7 +22,7 @@
   height: 30px;
   width: 30px;
   margin-top: 7px;
-  margin-left: -10px;
+  margin-left: -15px;
 }
 
 .startButtonText {
@@ -30,7 +30,7 @@
   font-weight: bold;
   font-size: 22px;
   font-style: italic;
-  margin: 8px 0 0 -10px;
+  margin: 8px 0 0 -15px;
 }
 
 .menuDisplay {
