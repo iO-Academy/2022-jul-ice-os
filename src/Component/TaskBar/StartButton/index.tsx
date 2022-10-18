@@ -26,13 +26,27 @@ const StartButton = (): JSX.Element => {
             </div>
             <div className="menuDisplay" id="menu">
                 <div className={"menuSpacer"}>
-                    <img className={"menuImage"} src={"../../../assets/Desktop/Images/menuImage.png"} alt="Iceberg start menu logo" />
+                    <img className={"menuImage"} src={"../../../assets/Desktop/Images/menuImage.png"} alt="Penguin in a igloo" />
                     <p className={"userInMenu"}>Nico</p>
                 </div>
-                <ul>It</ul>
-                <ul>is</ul>
-                <ul>so</ul>
-                <ul>beautiful</ul>
+                <div >
+                <ul className={"menuList"}>
+                    <img className={"menuListImage"} src={"../../../assets/Desktop/Images/AboutImage.png"} alt="Penguin reading a book"/>
+                    <p className={"menuListText"}>About</p>
+                </ul>
+                <ul className={"menuList"}>
+                    <img className={"menuListImage"} src={"../../../assets/Desktop/Images/surfWaveFury.png"} alt="Surfing penguin, from the amazing game SurfWave Fury"/>
+                    <p className={"menuListText"}>SurfWave Fury</p>
+                </ul>
+                <ul className={"menuList"}>
+                    <img className={"menuListImage"} src={"../../../assets/Desktop/Images/musicPenguin.png"} alt="Penguin listening to music"/>
+                    <p className={"menuListText"}>Music</p>
+                </ul>
+                <ul className={"menuList"}>
+                    <img className={"menuListImage"} src={"../../../assets/Desktop/Images/menuImage.png"} alt="Penguin in a igloo"/>
+                    <p className={"menuListText"}>Gifs</p>
+                </ul>
+                </div>
                 <div className={"menuSpacer2"}>There is no log out, you are here forever</div>
             </div>
         </div>

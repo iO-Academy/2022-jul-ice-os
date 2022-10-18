@@ -10,6 +10,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: -1px;
+  cursor: pointer;
 }
 
 .startButton:hover {
@@ -34,7 +35,7 @@
 
 .menuDisplay {
   width: 300px;
-  height: 300px;
+  height: 320px;
   background-color: #D3E5FB;
   display: none;
   position: fixed;
@@ -81,4 +82,26 @@
   font-weight: bolder;
   color: #FFFFFF;
   padding-left: 10px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 5px 0 0;
+  border-bottom: solid thin #FFFFFF;
+  cursor: pointer;
+}
+
+.menuListImage {
+  height: 45px;
+  width: 45px;
+  margin-left: -30px;
+  background-color: #FFFFFF;
+  border: solid #0D8DEA;
+  padding: 2px 2px 2px 2px;
+}
+
+.menuListText {
+  margin-left: 10px;
 }
