@@ -1,6 +1,7 @@
 import "./Header.css"
 import CloseButton from "../Buttons/CloseButton/CloseButton";
 import MinimizeButton from "../Buttons/MinimizeButton/MinimizeButton";
+import MaximizeButton from "../Buttons/MaximizeButton/MaximizeButton";
 
 interface HeaderProps {
     ApplicationName: string
@@ -16,6 +17,7 @@ const Header = (props :HeaderProps) => {
             </div>
             <div className={"buttonContainer"}>
                 <MinimizeButton />
+                <MaximizeButton />
                 <CloseButton />
             </div>
 
