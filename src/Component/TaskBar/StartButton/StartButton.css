@@ -36,9 +36,6 @@
   display: none;
   position: fixed;
   bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   border-radius: 0 15px 0 0;
 }
 
@@ -47,12 +44,18 @@
   background-color: #0D8DEA;
   box-shadow: inset 0px 0px 10px 10px rgba(28, 107, 218, 0.7);
   border-radius: 0 15px 0 0;
+  width: 305px;
+  top: 0;
 }
 
 .menuSpacer2 {
   height: 40px;
   background-color: #0D8DEA;
   box-shadow: inset 0px 0px 10px 10px rgba(28, 107, 218, 0.7);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=StartButton.css.map */
