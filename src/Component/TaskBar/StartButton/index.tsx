@@ -53,7 +53,7 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
                     <p className={"menuListText"}>Music</p>
                 </ul>
                 <ul className={"menuList"}>
-                    <img className={"menuListImage"} src={"../../../assets/Desktop/Images/menuImage.png"} alt="Penguin in a igloo"/>
+                    <img className={"menuListImage"} src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"} alt="Gif watching penguin"/>
                     <p className={"menuListText"}>Gifs</p>
                 </ul>
                 </div>
