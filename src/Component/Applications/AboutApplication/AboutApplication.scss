@@ -1,4 +1,7 @@
 .draggable {
-  height: 50%;
-  width: 50%;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  resize: both;
+  overflow: auto;
 }

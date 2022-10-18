@@ -1,13 +1,20 @@
 import Draggable from 'react-draggable'
-import './AboutApplication.scss'
+import './AboutApplication.css'
 import Header from "../SubComponents/Header";
 
-const About = (props) => {
+const AboutApplication = () => {
     return (
-        <Draggable className={"draggable"}>
-            <div>
-              <Header/>
+
+        <Draggable
+            handle=".handle"
+            defaultPosition={{x: 0, y: 50}}
+            grid={[25, 25]}
+            scale={1}>
+            <div className={"draggable"}>
+              <Header ApplicationName={"About"}/>
             </div>
         </Draggable>
     )
 }
+
+export default AboutApplication
