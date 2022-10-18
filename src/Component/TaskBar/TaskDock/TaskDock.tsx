@@ -9,9 +9,25 @@ interface TaskDockProps {
 
 
 const TaskDock = (props :TaskDockProps) => {
+
+    const handleCloseAbout = () => {
+        props.setAboutIsOpen(false)
+        props.setAboutIsRunning(false)
+    }
+
+    const handleOpenAbout = () => {
+        props.setAboutIsOpen(true);
+    }
+
     return (
         <div className={"taskDock"}>
-            {props.aboutIsRunning ? <div>Hello World</div> : "" }
+            {props.aboutIsRunning ?
+                <div className={"taskDockApplication"}>
+                    <img onClick={handleOpenAbout} className={"applicationIcon"} src={"../../../assets/Desktop/Images/AboutImage.png"} alt={"About Icon"} />
+                    <p className={"applicationText"}>About</p>
+                    <button onClick={handleCloseAbout} className={"closeButtonTaskDock"}>X</button>
+                </div>
+                : "" }
         </div>
     )
 }

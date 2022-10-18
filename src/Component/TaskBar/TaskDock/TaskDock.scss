@@ -7,3 +7,27 @@
   height: 50px;
   align-items: center;
 }
+
+.taskDockApplication {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 5px;
+}
+
+.applicationIcon {
+  margin: 0px;
+}
+
+.applicationText {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.closeButtonTaskDock {
+  height: 20px;
+  background-color: #e1532f;
+  border: 1px solid #FFFFFF;
+  color: white;
+  font-weight: bold;
+}
