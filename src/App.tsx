@@ -11,8 +11,11 @@ function App() {
 
   return (
     <div className="App" id="App">
-        <Desktop aboutIsOpen={aboutIsOpen} setAboutIsRunning={setAboutIsRunning}/>
-        <TaskBar/>
+        <Desktop aboutIsOpen={aboutIsOpen}
+                 setAboutIsRunning={setAboutIsRunning}
+                 setAboutIsOpen={setAboutIsOpen}/>
+        <TaskBar setAboutIsOpen={setAboutIsOpen}
+                 setAboutIsRunning={setAboutIsRunning}/>
     </div>
   );
 }

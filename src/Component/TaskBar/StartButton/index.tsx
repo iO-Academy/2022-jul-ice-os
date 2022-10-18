@@ -1,7 +1,12 @@
 import './StartButton.css';
 import React, {useState} from "react";
 
-const StartButton = (): JSX.Element => {
+interface StartButtonProps {
+    setAboutIsOpen: Function
+    setAboutIsRunning: Function
+}
+
+const StartButton = (props :StartButtonProps): JSX.Element => {
     const [toggle, setToggle] = React.useState(false)
     const [width, setWidth] = React.useState(null)
 
@@ -14,6 +19,11 @@ const StartButton = (): JSX.Element => {
            // @ts-ignore
             setWidth("block");document.getElementById("menu").style.display="block";
         }
+    }
+
+    const openAboutApplication = () => {
+        props.setAboutIsOpen(true);
+        props.setAboutIsRunning(true)
     }
 
     return (
@@ -30,7 +40,7 @@ const StartButton = (): JSX.Element => {
                     <p className={"userInMenu"}>Nico</p>
                 </div>
                 <div >
-                <ul className={"menuList"}>
+                <ul className={"menuList"} onClick={openAboutApplication}>
                     <img className={"menuListImage"} src={"../../../assets/Desktop/Images/AboutImage.png"} alt="Penguin reading a book"/>
                     <p className={"menuListText"}>About</p>
                 </ul>

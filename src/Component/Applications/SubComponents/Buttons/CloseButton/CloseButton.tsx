@@ -1,9 +1,15 @@
 import './CloseButton.css'
 
-const CloseButton = () => {
+interface CloseButtonProps {
+    setAboutIsOpen: Function
+    setAboutIsRunning: Function
+}
+
+const CloseButton = (props: CloseButtonProps) => {
 
     const handleClose = () => {
-
+        props.setAboutIsOpen(false);
+        props.setAboutIsRunning(false);
     }
 
     return (
