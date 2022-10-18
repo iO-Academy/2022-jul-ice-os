@@ -89,14 +89,21 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin: 5px 0 0;
+  margin: 0 0 0;
   border-bottom: solid thin #FFFFFF;
   cursor: pointer;
+}
+
+.menuList:hover {
+  background-color: rgba(10, 104, 172, 0.41);
+  box-shadow: inset 0px 0px 15px 0px rgba(15, 79, 169, 0.7);
+  color: #FFFFFF;
 }
 
 .menuListImage {
   height: 45px;
   width: 45px;
+  margin-top: 3px;
   margin-left: -30px;
   background-color: #FFFFFF;
   border: solid #0D8DEA;
@@ -105,6 +112,7 @@
 
 .menuListText {
   margin-left: 10px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=StartButton.css.map */
