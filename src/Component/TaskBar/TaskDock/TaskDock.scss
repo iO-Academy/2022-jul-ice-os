@@ -1,11 +1,12 @@
 .taskDock {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 120px;
   display: flex;
   flex-direction: row;
   height: 50px;
   align-items: center;
+  gap: 10px;
 }
 
 .taskDockApplication {

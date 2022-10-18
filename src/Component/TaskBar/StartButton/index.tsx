@@ -13,7 +13,7 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
 
     const showMenu = () => {
         setToggle(!toggle);
-        if (toggle === true) {
+        if (toggle) {
             // @ts-ignore
            document.getElementById( "menu").style.display="none";
         } else {
