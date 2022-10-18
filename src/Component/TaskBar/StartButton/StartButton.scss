@@ -36,5 +36,13 @@
   display: none;
   position: fixed;
   bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.menuSpacer {
+  height: 40px;
+  background-color: #0D8DEA;
+  box-shadow: inset 0px 0px 10px 10px rgba(28, 107, 218, 0.7);
 }

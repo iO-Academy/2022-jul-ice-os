@@ -27,10 +27,12 @@ const StartButton = (): JSX.Element => {
         </button>
             </div>
             <div className="menuDisplay" id="menu">
+                <div className={"menuSpacer"}></div>
                 <ul>text</ul>
                 <ul>text</ul>
                 <ul>text</ul>
                 <ul>text</ul>
+                <div className={"menuSpacer"}></div>
             </div>
         </div>
     )
