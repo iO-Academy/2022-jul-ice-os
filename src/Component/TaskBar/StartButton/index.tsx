@@ -27,13 +27,10 @@ const StartButton = (): JSX.Element => {
         </button>
             </div>
             <div className="menuDisplay" id="menu">
-                <ul>
-                    <img src="#"></img>
-                    <p>home</p>
-                </ul>
-                <li>text</li>
-                <li>text</li>
-                <li>text</li>
+                <ul>text</ul>
+                <ul>text</ul>
+                <ul>text</ul>
+                <ul>text</ul>
             </div>
         </div>
     )
