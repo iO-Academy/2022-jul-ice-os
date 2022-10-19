@@ -35,16 +35,15 @@ const TaskBar = (props: TaskBarProps): JSX.Element => {
                       setAboutIsRunning={props.setAboutIsRunning}
                       aboutIsOpen={props.aboutIsOpen}
                       aboutIsRunning={props.aboutIsRunning}
+                      gifIsOpen={props.gifIsOpen}
+                      gifIsRunning={props.gifIsRunning}
+                      setGifIsOpen={props.setGifIsOpen}
+                      setGifIsRunning={props.setGifIsRunning}
                       setMusicIsOpen={props.setMusicIsOpen}
                       setMusicIsRunning={props.setMusicIsRunning}
                       musicIsOpen={props.musicIsOpen}
                       musicIsRunning={props.musicIsRunning}/>
             <UtilitiesHolder/>
-                      setGifIsRunning={props.setGifIsRunning}
-                      setGifIsOpen={props.setGifIsOpen}
-                      gifIsOpen={props.gifIsOpen}
-                      gifIsRunning={props.gifIsRunning}/>
-            <UtilitiesHolder />
         </div>
     )
 }
