@@ -7,7 +7,8 @@ const MaximizeButton = () => {
     }
 
     return (
-        <button onClick={handleClose} className={"maximizeButton"}>&#9634;
+        <button onClick={handleClose} className={"maximizeButton"}>
+            &#9634;
         </button>
     )
 }

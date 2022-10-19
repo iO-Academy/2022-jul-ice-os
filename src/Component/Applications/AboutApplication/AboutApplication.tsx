@@ -14,7 +14,6 @@ const AboutApplication = (props :AboutApplicationProps) => {
     const [aboutMaximize, setAboutMaximize] = useState(false);
 
     return (
-
         <Draggable
             handle=".handle"
             defaultPosition={{x: 50, y: 50}}

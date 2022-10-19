@@ -32,7 +32,6 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
         props.setAboutIsRunning(true)
     }
 
-
     return (
         <div className="startMenu">
             <div>
@@ -47,7 +46,6 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
                     <p className={"userInMenu"}>Nico</p>
                 </div>
                 <div >
-
                 <ul className={"menuList"} onClick={openAboutApplication}>
                     <img className={"menuListImage"} src={"../../../assets/Desktop/Images/AboutImage.png"} alt="Penguin reading a book"/>
                     <p className={"menuListText"}>About</p>
