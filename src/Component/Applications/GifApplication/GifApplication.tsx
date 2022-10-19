@@ -8,11 +8,13 @@ import GifIcon from "./Images/gifWatchingPenguin.png"
 interface GifApplicationProps {
     setGifIsRunning: Function
     setGifIsOpen: Function
+    gifIsOpen: boolean
 }
 
 const GifApplication = (props :GifApplicationProps) => {
     return (
        <Draggable
+           defaultClassName={props.gifIsOpen ? "gifDraggable" : "gifDraggable hiden"}
            handle=".gifHandle"
            defaultPosition={{x: 500, y: 50}}
            grid={[25, 25]}

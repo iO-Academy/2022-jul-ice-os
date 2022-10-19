@@ -1,5 +1,6 @@
 import './GifApplicationContent.css'
 import {useEffect, useState} from "react";
+import giphyLogo from '../Images/Poweredby_100px-White_VertLogo.png'
 
 const GifApplicationContent = () => {
 
@@ -21,6 +22,7 @@ const GifApplicationContent = () => {
         <div className={"gifDisplayContainer"}>
             <button className={"gifButton"} onClick={getGifData}>Next Gif Please :)</button>
             <img className={"gifDisplay"} src={storedGifData} alt={"a trending giphy"}/>
+            <img className={"giphyLogo"} src={giphyLogo} alt={"giphyLogo"} />
         </div>
 
     )

@@ -19,9 +19,14 @@ const Desktop = (props :DesktopProps): JSX.Element => {
 
     return (
         <main onClick={closeStartMenu} className="desktop">
-            <AboutApplication setAboutIsOpen={props.setAboutIsOpen} setAboutIsRunning={props.setAboutIsRunning} aboutIsOpen={props.aboutIsOpen} />
-            {props.gifIsOpen ? <GifApplication setGifIsOpen={props.setGifIsOpen} setGifIsRunning={props.setGifIsRunning} /> : ""}
-            {props.gifIsOpen ? props.setGifIsRunning(true) : ""}
+            <AboutApplication
+                setAboutIsOpen={props.setAboutIsOpen}
+                setAboutIsRunning={props.setAboutIsRunning}
+                aboutIsOpen={props.aboutIsOpen} />
+            <GifApplication
+                setGifIsRunning={props.setGifIsRunning}
+                setGifIsOpen={props.setGifIsOpen}
+                gifIsOpen={props.gifIsOpen} />
         </main>
     )
 }

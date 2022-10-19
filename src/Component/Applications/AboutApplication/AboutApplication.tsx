@@ -16,12 +16,13 @@ const AboutApplication = (props :AboutApplicationProps) => {
 
     return (
         <Draggable
+            defaultClassName={props.aboutIsOpen ? "draggable" : "draggable hiden"}
             handle=".handle"
             defaultPosition={{x: 50, y: 50}}
             grid={[25, 25]}
             scale={1}
             bounds={'.desktop'}>
-            <div className={props.aboutIsOpen ? "draggable" : "draggable hiden"}>
+            <div className={"draggable"}>
               <Header ApplicationName={"About"}
                       ApplicationIcon={AboutIcon}
                       setAboutIsOpen={props.setAboutIsOpen}
