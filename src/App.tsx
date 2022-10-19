@@ -9,7 +9,7 @@ function App() {
     const [aboutIsOpen, setAboutIsOpen] = useState(false);
     const [aboutIsRunning, setAboutIsRunning] = useState(false);
     const [startMenuOpen, setStartMenuOpen] = useState(true);
-    const [gifIsOpen, setGifIsOpen] = useState(true)
+    const [gifIsOpen, setGifIsOpen] = useState(false)
     const [gifIsRunning, setGifIsRunning] = useState(false)
 
   return (
