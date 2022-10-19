@@ -12,10 +12,12 @@
 .taskDockApplication {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 50px;
   gap: 5px;
   width: auto;
   border-right: 1px solid white;
+  padding: 0 5px 0 5px;
 }
 
 .applicationIcon {
