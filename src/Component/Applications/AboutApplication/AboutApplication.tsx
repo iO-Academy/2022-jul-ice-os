@@ -19,7 +19,6 @@ const AboutApplication = (props :AboutApplicationProps) => {
             defaultClassName={props.aboutIsOpen ? "draggable" : "draggable hiden"}
             handle=".handle"
             defaultPosition={{x: 50, y: 50}}
-            grid={[25, 25]}
             scale={1}
             bounds={'.desktop'}>
             <div className={"draggable"}>

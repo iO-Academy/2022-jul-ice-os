@@ -16,8 +16,7 @@ const GifApplication = (props :GifApplicationProps) => {
        <Draggable
            defaultClassName={props.gifIsOpen ? "gifDraggable" : "gifDraggable hiden"}
            handle=".gifHandle"
-           defaultPosition={{x: 500, y: 50}}
-           grid={[25, 25]}
+           defaultPosition={{x: 0, y: 0}}
            scale={1}
            bounds={'.desktop'}>
            <div className={"gifDraggable"}>
