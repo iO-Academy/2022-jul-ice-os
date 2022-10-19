@@ -20,7 +20,7 @@ const SurfApplication = (props :SurfApplicationProps) => {
             grid={[25, 25]}
             scale={1}
             bounds={'.desktop'}>
-            <div className={"draggable"}>
+            <div className={"Surfdraggable"}>
                 <Header ApplicationName={"Surfwave Fury"}
                         ApplicationIcon={SurfIcon}
                         setAboutIsOpen={props.setSurfIsOpen}
