@@ -8,14 +8,20 @@ function App() {
 
     const [aboutIsOpen, setAboutIsOpen] = useState(false);
     const [aboutIsRunning, setAboutIsRunning] = useState(false);
+    const [startMenuOpen, setStartMenuOpen] = useState(true);
 
   return (
     <div className="App" id="App">
         <Desktop aboutIsOpen={aboutIsOpen}
                  setAboutIsRunning={setAboutIsRunning}
-                 setAboutIsOpen={setAboutIsOpen}/>
+                 setAboutIsOpen={setAboutIsOpen}
+                 setStartMenuOpen={setStartMenuOpen}/>
         <TaskBar setAboutIsOpen={setAboutIsOpen}
-                 setAboutIsRunning={setAboutIsRunning}/>
+                 setAboutIsRunning={setAboutIsRunning}
+                 aboutIsOpen={aboutIsOpen}
+                 aboutIsRunning={aboutIsRunning}
+                 startMenuOpen={startMenuOpen}
+                 setStartMenuOpen={setStartMenuOpen}/>
     </div>
   );
 }
