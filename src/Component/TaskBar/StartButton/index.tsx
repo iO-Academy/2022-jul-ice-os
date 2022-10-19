@@ -4,6 +4,8 @@ import React, {useEffect, useState} from "react";
 interface StartButtonProps {
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    setMusicIsOpen: Function
+    setMusicIsRunning: Function
     startMenuOpen: boolean
     setStartMenuOpen: Function
 }
@@ -31,6 +33,10 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
         props.setAboutIsOpen(true);
         props.setAboutIsRunning(true)
     }
+    const openMusicApplication = () => {
+        props.setMusicIsOpen(true);
+        props.setMusicIsRunning(true)
+    }
 
 
     return (
@@ -56,7 +62,7 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
                     <img className={"menuListImage"} src={"../../../assets/Desktop/Images/surfWaveFury.png"} alt="Surfing penguin, from the amazing game SurfWave Fury"/>
                     <p className={"menuListText"}>SurfWave Fury</p>
                 </ul>
-                <ul className={"menuList"}>
+                <ul className={"menuList"} onClick={openMusicApplication}>
                     <img className={"menuListImage"} src={"../../../assets/Desktop/Images/musicPenguin.png"} alt="Penguin listening to music"/>
                     <p className={"menuListText"}>Music</p>
                 </ul>
