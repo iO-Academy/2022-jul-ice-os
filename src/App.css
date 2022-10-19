@@ -3,3 +3,7 @@
     overflow: hidden;
     font-family: Tahoma, serif;
 }
+
+.hiden {
+    visibility: hidden;
+}

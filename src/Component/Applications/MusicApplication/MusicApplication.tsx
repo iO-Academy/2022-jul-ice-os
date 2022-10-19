@@ -21,7 +21,7 @@ const MusicApplication = (props :MusicApplicationProps) => {
             grid={[25, 25]}
             scale={1}
             bounds={'.desktop'}>
-            <div className={"draggable"}>
+            <div className={props.setMusicIsOpen ? "musicDraggable" : "musicDraggable hiden"}>
                 <Header ApplicationName={"Music"}
                         ApplicationIcon={musicPenguin}
                         setAboutIsOpen={props.setMusicIsOpen}
