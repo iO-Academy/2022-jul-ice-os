@@ -21,7 +21,6 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
         if (!props.startMenuOpen) {
             // @ts-ignore
             setWidth("block");document.getElementById("menu").style.display="block";
-
         } else {
             // @ts-ignore
             document.getElementById( "menu").style.display="none";

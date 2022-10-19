@@ -7,7 +7,6 @@ interface TaskDockProps {
     aboutIsRunning: boolean
 }
 
-
 const TaskDock = (props :TaskDockProps) => {
 
     const handleCloseAbout = () => {
