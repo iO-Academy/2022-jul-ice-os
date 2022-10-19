@@ -1,11 +1,16 @@
 import './Desktop.css'
 import AboutApplication from "../Applications/AboutApplication/AboutApplication";
+import MusicApplication from "../Applications/MusicApplication/MusicApplication";
 import GifApplication from "../Applications/GifApplication/GifApplication";
+
 
 interface DesktopProps  {
     aboutIsOpen: boolean
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    musicIsOpen: boolean
+    setMusicIsOpen: Function
+    setMusicIsRunning: Function
     setStartMenuOpen: Function
     setGifIsOpen: Function
     setGifIsRunning: Function
