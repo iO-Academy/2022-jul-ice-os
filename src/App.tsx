@@ -25,6 +25,10 @@ function App() {
                  setAboutIsRunning={setAboutIsRunning}
                  aboutIsOpen={aboutIsOpen}
                  aboutIsRunning={aboutIsRunning}
+                 setGifIsRunning={setGifIsRunning}
+                 setGifIsOpen={setGifIsOpen}
+                 gifIsOpen={gifIsOpen}
+                 gifIsRunning={gifIsRunning}
                  startMenuOpen={startMenuOpen}
                  setStartMenuOpen={setStartMenuOpen}/>
     </div>

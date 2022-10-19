@@ -4,6 +4,8 @@ import React, {useEffect, useState} from "react";
 interface StartButtonProps {
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    setGifIsOpen: Function
+    setGifIsRunning: Function
     startMenuOpen: boolean
     setStartMenuOpen: Function
 }
@@ -32,6 +34,11 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
         props.setAboutIsRunning(true)
     }
 
+    const openGifApplication = () => {
+        props.setGifIsOpen(true)
+        props.setGifIsRunning(true)
+    }
+
     return (
         <div className="startMenu">
             <div>
@@ -58,7 +65,7 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
                     <img className={"menuListImage"} src={"../../../assets/Desktop/Images/musicPenguin.png"} alt="Penguin listening to music"/>
                     <p className={"menuListText"}>Music</p>
                 </ul>
-                <ul className={"menuList"}>
+                <ul className={"menuList"} onClick={openGifApplication}>
                     <img className={"menuListImage"} src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"} alt="Gif watching penguin"/>
                     <p className={"menuListText"}>Gifs</p>
                 </ul>
