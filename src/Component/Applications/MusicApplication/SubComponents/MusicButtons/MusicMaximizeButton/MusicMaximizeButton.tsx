@@ -1,6 +1,6 @@
-import './MaximizeButton.css'
+import './MusicMaximizeButton.css'
 
-const MaximizeButton = () => {
+const MusicMaximizeButton = () => {
 
     const handleClose = () => {
 
@@ -12,4 +12,4 @@ const MaximizeButton = () => {
     )
 }
 
-export default  MaximizeButton
+export default  MusicMaximizeButton

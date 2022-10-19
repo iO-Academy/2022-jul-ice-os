@@ -1,8 +1,10 @@
 .musicDraggable {
-  height: 400px;
-  width: 400px;
+  height: 365px;
+  width: 640px;
   background-color: #FFFFFF;
   resize: both;
+  max-height: 365px;
   min-height: 300px;
   min-width: 300px;
+  position: absolute;
 }

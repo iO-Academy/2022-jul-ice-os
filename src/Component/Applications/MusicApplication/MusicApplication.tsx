@@ -1,6 +1,6 @@
 import Draggable from 'react-draggable'
 import './MusicApplication.css'
-import Header from "./SubComponents/Header/Header";
+import MusicHeader from "./SubComponents/MusicHeader/MusicHeader";
 import musicPenguin from './Images/musicPenguin.png'
 import {useState} from "react";
 import MusicApplicationContent from "./MusicApplicationContent/MusicApplicationContent";
@@ -8,6 +8,7 @@ import MusicApplicationContent from "./MusicApplicationContent/MusicApplicationC
 interface MusicApplicationProps {
     setMusicIsOpen: Function
     setMusicIsRunning: Function
+    musicIsOpen: boolean
 }
 
 const MusicApplication = (props :MusicApplicationProps) => {
@@ -16,18 +17,18 @@ const MusicApplication = (props :MusicApplicationProps) => {
     return (
 
         <Draggable
-            handle=".handle"
-            defaultPosition={{x: 50, y: 50}}
-            grid={[25, 25]}
+            defaultClassName={props.musicIsOpen ? "musicDraggable" : "musicDraggable hiden"}
+            handle=".musicHandle"
+            defaultPosition={{x: 0, y: 0}}
             scale={1}
             bounds={'.desktop'}>
-            <div className={props.setMusicIsOpen ? "musicDraggable" : "musicDraggable hiden"}>
-                <Header ApplicationName={"Music"}
-                        ApplicationIcon={musicPenguin}
-                        setAboutIsOpen={props.setMusicIsOpen}
-                        setAboutIsRunning={props.setMusicIsRunning}
-                        setAboutMaximize={setAboutMaximize}
-                        aboutMaximize={aboutMaximize}/>
+            <div>
+                <MusicHeader ApplicationName={"Music"}
+                             ApplicationIcon={musicPenguin}
+                             setMusicIsOpen={props.setMusicIsOpen}
+                             setMusicIsRunning={props.setMusicIsRunning}
+                             setAboutMaximize={setAboutMaximize}
+                             aboutMaximize={aboutMaximize}/>
                 <MusicApplicationContent />
             </div>
         </Draggable>

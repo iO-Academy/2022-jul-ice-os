@@ -6,4 +6,9 @@
 
 .hiden {
     visibility: hidden;
+    position: absolute;
+}
+
+.draggable {
+    position: absolute;
 }
