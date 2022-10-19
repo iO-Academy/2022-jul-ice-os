@@ -8,7 +8,7 @@ function App() {
 
     const [aboutIsOpen, setAboutIsOpen] = useState(false);
     const [aboutIsRunning, setAboutIsRunning] = useState(false);
-    const [surfIsOpen, setSurfIsOpen] = useState(true);
+    const [surfIsOpen, setSurfIsOpen] = useState(false);
     const [surfIsRunning, setSurfIsRunning] = useState(false);
     const [startMenuOpen, setStartMenuOpen] = useState(true);
 
@@ -23,8 +23,12 @@ function App() {
                  setStartMenuOpen={setStartMenuOpen}/>
         <TaskBar setAboutIsOpen={setAboutIsOpen}
                  setAboutIsRunning={setAboutIsRunning}
+                 setSurfIsOpen={setSurfIsOpen}
+                 setSurfIsRunning={setSurfIsRunning}
                  aboutIsOpen={aboutIsOpen}
                  aboutIsRunning={aboutIsRunning}
+                 surfIsOpen={surfIsOpen}
+                 surfIsRunning={surfIsRunning}
                  startMenuOpen={startMenuOpen}
                  setStartMenuOpen={setStartMenuOpen}/>
     </div>
