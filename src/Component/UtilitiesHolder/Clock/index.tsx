@@ -1,7 +1,6 @@
 import './clock.css'
 
 const Clock = ():JSX.Element => {
-
     function addZero(timeDigit: number): string|number {
         if (timeDigit < 10) {
             const timeString: string = "0" + timeDigit
@@ -9,7 +8,6 @@ const Clock = ():JSX.Element => {
         } else {
                 return timeDigit
         }
-
     }
 
     const currentTime = () => {
@@ -19,7 +17,6 @@ const Clock = ():JSX.Element => {
         let minutes: string|number = addZero(date.getMinutes())
         let time: string|number = hours + ':' + minutes
         clockDisplay!.innerText = time
-
     }
 
     setInterval(currentTime, 1000);

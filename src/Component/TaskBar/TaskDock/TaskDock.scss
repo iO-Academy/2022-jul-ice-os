@@ -1,0 +1,34 @@
+.taskDock {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  gap: 10px;
+}
+
+.taskDockApplication {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 5px;
+}
+
+.applicationIcon {
+  margin: 0px;
+}
+
+.applicationText {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.closeButtonTaskDock {
+  height: 20px;
+  background-color: #e1532f;
+  border: 1px solid #FFFFFF;
+  color: white;
+  font-weight: bold;
+}
