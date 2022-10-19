@@ -1,6 +1,8 @@
 import './Desktop.css'
 import AboutApplication from "../Applications/AboutApplication/AboutApplication";
 import MusicApplication from "../Applications/MusicApplication/MusicApplication";
+import GifApplication from "../Applications/GifApplication/GifApplication";
+
 
 interface DesktopProps  {
     aboutIsOpen: boolean
@@ -10,8 +12,9 @@ interface DesktopProps  {
     setMusicIsOpen: Function
     setMusicIsRunning: Function
     setStartMenuOpen: Function
-
-
+    setGifIsOpen: Function
+    setGifIsRunning: Function
+    gifIsOpen: boolean
 }
 const Desktop = (props :DesktopProps): JSX.Element => {
 
@@ -21,10 +24,14 @@ const Desktop = (props :DesktopProps): JSX.Element => {
 
     return (
         <main onClick={closeStartMenu} className="desktop">
-            {props.aboutIsOpen ? <AboutApplication setAboutIsOpen={props.setAboutIsOpen} setAboutIsRunning={props.setAboutIsRunning} />  : ""}
-            {props.aboutIsOpen ? props.setAboutIsRunning(true) : ""}
-            {props.musicIsOpen ? <MusicApplication setMusicIsOpen={props.setMusicIsOpen} setMusicIsRunning={props.setMusicIsRunning} />  : ""}
-            {props.musicIsOpen ? props.setMusicIsRunning(true) : ""}
+            <AboutApplication
+                setAboutIsOpen={props.setAboutIsOpen}
+                setAboutIsRunning={props.setAboutIsRunning}
+                aboutIsOpen={props.aboutIsOpen} />
+            <GifApplication
+                setGifIsRunning={props.setGifIsRunning}
+                setGifIsOpen={props.setGifIsOpen}
+                gifIsOpen={props.gifIsOpen} />
         </main>
     )
 }

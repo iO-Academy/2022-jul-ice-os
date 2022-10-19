@@ -8,14 +8,15 @@ import AboutApplicationContent from "./AboutApplicationContent/AboutApplicationC
 interface AboutApplicationProps {
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    aboutIsOpen: boolean
 }
 
 const AboutApplication = (props :AboutApplicationProps) => {
     const [aboutMaximize, setAboutMaximize] = useState(false);
 
     return (
-
         <Draggable
+            defaultClassName={props.aboutIsOpen ? "draggable" : "draggable hiden"}
             handle=".handle"
             defaultPosition={{x: 50, y: 50}}
             grid={[25, 25]}

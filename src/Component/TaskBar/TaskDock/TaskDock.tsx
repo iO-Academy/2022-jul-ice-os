@@ -3,6 +3,10 @@ import './TaskDock.css'
 interface TaskDockProps {
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    setGifIsRunning: Function
+    setGifIsOpen: Function
+    gifIsOpen: boolean
+    gifIsRunning: boolean
     aboutIsOpen: boolean
     aboutIsRunning: boolean
     setMusicIsOpen: Function
@@ -29,6 +33,15 @@ const TaskDock = (props :TaskDockProps) => {
         props.setMusicIsOpen(true);
     }
 
+    const handleCloseGif = () => {
+        props.setGifIsOpen(false)
+        props.setGifIsRunning(false)
+    }
+
+    const handleOpenGif = () => {
+        props.setGifIsOpen(true)
+    }
+
     return (
         <div className={"taskDock"}>
             {props.aboutIsRunning ?
@@ -38,6 +51,7 @@ const TaskDock = (props :TaskDockProps) => {
                     <button onClick={handleCloseAbout} className={"closeButtonTaskDock"}>X</button>
                 </div>
                 : "" }
+
             {props.musicIsRunning ?
                 <div className={"taskDockApplication"}>
                     <img onClick={handleOpenMusic} className={"applicationIcon"} src={"../../../assets/Desktop/Images/musicPenguin.png"} alt={"Music Icon"} />
@@ -45,6 +59,14 @@ const TaskDock = (props :TaskDockProps) => {
                     <button onClick={handleCloseMusic} className={"closeButtonTaskDock"}>X</button>
                 </div>
                 : "" }
+        
+            {props.gifIsRunning ?
+                <div className={"taskDockApplication"}>
+                    <img onClick={handleOpenGif} className={"applicationIcon"} src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"} alt={"About Icon"} />
+                    <p onClick={handleOpenGif} className={"applicationText"}>Gif</p>
+                    <button onClick={handleCloseGif} className={"closeButtonTaskDock"}>X</button>
+                </div>
+                : ""}
         </div>
     )
 }

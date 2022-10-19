@@ -6,6 +6,8 @@ interface StartButtonProps {
     setAboutIsRunning: Function
     setMusicIsOpen: Function
     setMusicIsRunning: Function
+    setGifIsOpen: Function
+    setGifIsRunning: Function
     startMenuOpen: boolean
     setStartMenuOpen: Function
 }
@@ -40,6 +42,10 @@ const StartButton = (props: StartButtonProps): JSX.Element => {
         props.setMusicIsRunning(true)
     }
 
+    const openGifApplication = () => {
+        props.setGifIsOpen(true)
+        props.setGifIsRunning(true)
+    }
 
     return (
         <div className="startMenu">
@@ -72,11 +78,11 @@ const StartButton = (props: StartButtonProps): JSX.Element => {
                              alt="Penguin listening to music"/>
                         <p className={"menuListText"}>Music</p>
                     </ul>
-                    <ul className={"menuList"}>
-                        <img className={"menuListImage"} src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"}
-                             alt="Gif watching penguin"/>
-                        <p className={"menuListText"}>Gifs</p>
-                    </ul>
+                     <ul className={"menuList"} onClick={openGifApplication}>
+                    <img className={"menuListImage"} src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"} 
+                      alt="Gif watching penguin"/>
+                    <p className={"menuListText"}>Gifs</p>
+                </ul>
                 </div>
                 <div className={"menuSpacer2"}>
                     <div className={"menuButtonsContainer"}>

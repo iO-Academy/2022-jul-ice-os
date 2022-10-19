@@ -1,6 +1,6 @@
-import './MaximizeButton.css'
+import './GifMaximizeButton.css'
 
-const MaximizeButton = () => {
+const GifMaximizeButton = () => {
 
     const handleClose = () => {
 
@@ -13,4 +13,4 @@ const MaximizeButton = () => {
     )
 }
 
-export default  MaximizeButton
+export default  GifMaximizeButton
