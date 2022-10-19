@@ -42,7 +42,7 @@ const TaskDock = (props :TaskDockProps) => {
                 : "" }
             {props.surfIsRunning ?
                 <div className={"taskDockApplication"}>
-                    <img onClick={handleOpenSurf} className={"applicationIcon"} src={"../../../assets/Desktop/Images/surfWaveFury.png"} alt={"About Icon"} />
+                    <img onClick={handleOpenSurf} className={"applicationIcon"} src={"../../../assets/Desktop/Images/surfingPenguinIcon.png"} alt={"About Icon"} />
                     <p onClick={handleOpenSurf} className={"applicationText"}>Surfwave Fury</p>
                     <button onClick={handleCloseSurf} className={"closeButtonTaskDock"}>X</button>
                 </div>
