@@ -12,7 +12,6 @@ interface HeaderProps {
     aboutMaximize: boolean
 }
 
-
 const Header = (props :HeaderProps) => {
 
     return (
@@ -26,10 +25,8 @@ const Header = (props :HeaderProps) => {
                 <MaximizeButton />
                 <CloseButton setAboutIsOpen={props.setAboutIsOpen} setAboutIsRunning={props.setAboutIsRunning} />
             </div>
-
         </header>
     )
 }
-
 
 export default Header
