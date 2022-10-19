@@ -8,7 +8,7 @@ function App() {
 
     const [aboutIsOpen, setAboutIsOpen] = useState(false);
     const [aboutIsRunning, setAboutIsRunning] = useState(false);
-    const [musicIsOpen, setMusicIsOpen] = useState(true);
+    const [musicIsOpen, setMusicIsOpen] = useState(false);
     const [musicIsRunning, setMusicIsRunning] = useState(false);
     const [startMenuOpen, setStartMenuOpen] = useState(true);
 
