@@ -8,6 +8,7 @@ import AboutApplicationContent from "./AboutApplicationContent/AboutApplicationC
 interface AboutApplicationProps {
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    aboutIsOpen: boolean
 }
 
 const AboutApplication = (props :AboutApplicationProps) => {
@@ -20,7 +21,7 @@ const AboutApplication = (props :AboutApplicationProps) => {
             grid={[25, 25]}
             scale={1}
             bounds={'.desktop'}>
-            <div className={"draggable"}>
+            <div className={props.aboutIsOpen ? "draggable" : "draggable hiden"}>
               <Header ApplicationName={"About"}
                       ApplicationIcon={AboutIcon}
                       setAboutIsOpen={props.setAboutIsOpen}
