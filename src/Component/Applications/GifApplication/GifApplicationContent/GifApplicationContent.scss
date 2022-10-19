@@ -1,0 +1,24 @@
+.gifDisplayContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gifDisplay {
+  height: auto;
+  width: auto;
+  max-height: 500px;
+  max-width: 600px;
+}
+
+.gifButton {
+  background-color: #D3E5FB;
+  border: solid #0D8DEA;
+  font-size: 15px;
+  font-weight: bold;
+  width: 300px;
+  display: block;
+  margin: 10px 0 5px 0;
+  padding: 5px 0 5px 0;
+}

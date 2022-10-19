@@ -8,6 +8,10 @@ interface TaskBarProps {
     setAboutIsRunning: Function
     aboutIsOpen: boolean
     aboutIsRunning: boolean
+    setGifIsOpen: Function
+    setGifIsRunning: Function
+    gifIsOpen: boolean
+    gifIsRunning: boolean
     startMenuOpen: boolean
     setStartMenuOpen: Function
 }
@@ -17,12 +21,18 @@ const TaskBar = (props: TaskBarProps):JSX.Element  => {
         <div className="TaskBar">
             <StartButton setAboutIsOpen={props.setAboutIsOpen}
                          setAboutIsRunning={props.setAboutIsRunning}
+                         setGifIsRunning={props.setGifIsRunning}
+                         setGifIsOpen={props.setGifIsOpen}
                          startMenuOpen={props.startMenuOpen}
                          setStartMenuOpen={props.setStartMenuOpen}/>
             <TaskDock setAboutIsOpen={props.setAboutIsOpen}
                       setAboutIsRunning={props.setAboutIsRunning}
                       aboutIsOpen={props.aboutIsOpen}
-                      aboutIsRunning={props.aboutIsRunning}/>
+                      aboutIsRunning={props.aboutIsRunning}
+                      setGifIsRunning={props.setGifIsRunning}
+                      setGifIsOpen={props.setGifIsOpen}
+                      gifIsOpen={props.gifIsOpen}
+                      gifIsRunning={props.gifIsRunning}/>
             <UtilitiesHolder />
         </div>
     )
