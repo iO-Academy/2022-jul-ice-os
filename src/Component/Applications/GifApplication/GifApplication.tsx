@@ -18,7 +18,7 @@ const GifApplication = (props :GifApplicationProps) => {
            grid={[25, 25]}
            scale={1}
            bounds={'.desktop'}>
-           <div className={"draggable"}>
+           <div className={"gifDraggable"}>
                <GifHeader
                    ApplicationName={"Gif Application"}
                    ApplicationIcon={GifIcon}

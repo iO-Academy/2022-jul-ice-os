@@ -18,8 +18,9 @@ const GifApplicationContent = () => {
 
 
     return (
-        <div>
-            <img src={storedGifData} alt={"a random giphy"}/>
+        <div className={"gifDisplayContainer"}>
+            <button className={"gifButton"} onClick={getGifData}>Next Gif Please :)</button>
+            <img className={"gifDisplay"} src={storedGifData} alt={"a trending giphy"}/>
         </div>
 
     )
