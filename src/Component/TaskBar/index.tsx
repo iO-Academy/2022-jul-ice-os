@@ -8,13 +8,17 @@ interface TaskBarProps {
     setAboutIsRunning: Function
     aboutIsOpen: boolean
     aboutIsRunning: boolean
+    startMenuOpen: boolean
+    setStartMenuOpen: Function
 }
 
 const TaskBar = (props: TaskBarProps):JSX.Element  => {
     return (
         <div className="TaskBar">
             <StartButton setAboutIsOpen={props.setAboutIsOpen}
-                         setAboutIsRunning={props.setAboutIsRunning} />
+                         setAboutIsRunning={props.setAboutIsRunning}
+                         startMenuOpen={props.startMenuOpen}
+                         setStartMenuOpen={props.setStartMenuOpen}/>
             <TaskDock setAboutIsOpen={props.setAboutIsOpen}
                       setAboutIsRunning={props.setAboutIsRunning}
                       aboutIsOpen={props.aboutIsOpen}

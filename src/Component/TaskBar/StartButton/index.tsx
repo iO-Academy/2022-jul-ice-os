@@ -1,9 +1,11 @@
 import './StartButton.css';
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 interface StartButtonProps {
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    startMenuOpen: boolean
+    setStartMenuOpen: Function
 }
 
 const StartButton = (props :StartButtonProps): JSX.Element => {
@@ -12,15 +14,19 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
     const [width, setWidth] = React.useState(null)
 
     const showMenu = () => {
-        setToggle(!toggle);
-        if (toggle) {
-            // @ts-ignore
-           document.getElementById( "menu").style.display="none";
-        } else {
-           // @ts-ignore
-            setWidth("block");document.getElementById("menu").style.display="block";
-        }
+        props.setStartMenuOpen(!props.startMenuOpen);
     }
+
+    useEffect(() => {
+        if (!props.startMenuOpen) {
+            // @ts-ignore
+            setWidth("block");document.getElementById("menu").style.display="block";
+
+        } else {
+            // @ts-ignore
+            document.getElementById( "menu").style.display="none";
+        }
+    },[props.startMenuOpen])
 
     const openAboutApplication = () => {
         props.setAboutIsOpen(true);
