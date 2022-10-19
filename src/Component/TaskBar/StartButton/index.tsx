@@ -71,7 +71,14 @@ const StartButton = (props :StartButtonProps): JSX.Element => {
                     <p className={"menuListText"}>Gifs</p>
                 </ul>
                 </div>
-                <div className={"menuSpacer2"}>There is no log out, you are here forever</div>
+                <div className={"menuSpacer2"}>
+                    <div className={"menuButtonsContainer"}>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img className={"logoutButton"} src={"../../../assets/Desktop/Images/logout.png"} alt="Logout penguin" />
+                            <p className={"logoutText"}>Log off</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     )

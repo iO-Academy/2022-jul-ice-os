@@ -112,3 +112,31 @@
   margin-left: 10px;
   font-weight: bold;
 }
+
+.menuButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.logoutButton {
+  height: 40px;
+  width: 40px;
+  margin-top: 1px;
+  background-color: #FFFFFF;
+  border: solid #0D8DEA;
+  padding: 2px 2px 2px 2px;
+  border-radius: 7px;
+  position: absolute;
+  right: 55px;
+  cursor: pointer;
+}
+
+.logoutText {
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  bottom: -5px;
+  cursor: pointer;
+}
