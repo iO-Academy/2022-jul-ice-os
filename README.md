@@ -1,11 +1,11 @@
 # Table of contents 
-* General Information of Ice OS
-  * General Information of About App
-  * General Information of SurfWave Fury
-  * General Information of Music App
-  * General Information of Random GIFs App
-* Technologies
-* Setup
+* [General Information of Ice OS](https://github.com/iO-Academy/2022-jul-ice-os/blob/read-me/README.md#ice-os)
+  * [General Information of About App](https://github.com/iO-Academy/2022-jul-ice-os/blob/read-me/README.md#about-app)
+  * [General Information of SurfWave Fury](https://github.com/iO-Academy/2022-jul-ice-os/blob/read-me/README.md#surfwave-fury)
+  * [General Information of Music App](https://github.com/iO-Academy/2022-jul-ice-os/blob/read-me/README.md#music-app)
+  * [General Information of Random GIFs App](https://github.com/iO-Academy/2022-jul-ice-os/blob/read-me/README.md#random-gifs-app)
+* [Technologies](https://github.com/iO-Academy/2022-jul-ice-os/blob/read-me/README.md#technologies)
+* [Setup](https://github.com/iO-Academy/2022-jul-ice-os/blob/read-me/README.md#setup)
 
 # General Information
 ### Ice OS
