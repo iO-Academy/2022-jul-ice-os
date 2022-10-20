@@ -17,7 +17,7 @@ const MusicApplication = (props :MusicApplicationProps) => {
     return (
 
         <Draggable
-            defaultClassName={props.musicIsOpen ? "musicDraggable" : "musicDraggable hiden"}
+            defaultClassName={props.musicIsOpen ? "musicDraggable" : "musicDraggable hidden"}
             handle=".musicHandle"
             defaultPosition={{x: 0, y: 0}}
             scale={1}

@@ -16,7 +16,7 @@ const SurfApplication = (props :SurfApplicationProps) => {
 
     return (
         <Draggable
-            defaultClassName={props.surfIsOpen ? "Surfdraggable" : "Surfdraggable hiden"}
+            defaultClassName={props.surfIsOpen ? "Surfdraggable" : "Surfdraggable hidden"}
             handle=".handle"
             defaultPosition={{x: 0, y: 0}}
             scale={1}

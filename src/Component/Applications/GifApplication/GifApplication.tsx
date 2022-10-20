@@ -25,7 +25,7 @@ let GifApplication = (props :GifApplicationProps) => {
 
     return (
        <Draggable
-           defaultClassName={props.gifIsOpen ? "gifDraggable" : "gifDraggable hiden"}
+           defaultClassName={props.gifIsOpen ? "gifDraggable" : "gifDraggable hidden"}
            handle=".gifHandle"
            defaultPosition={{x: 0, y: 0}}
            scale={1}

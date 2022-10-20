@@ -26,7 +26,7 @@ const AboutApplication = (props :AboutApplicationProps) => {
 
     return (
         <Draggable
-            defaultClassName={props.aboutIsOpen ? "draggable" : "draggable hiden"}
+            defaultClassName={props.aboutIsOpen ? "draggable" : "draggable hidden"}
             handle=".handle"
             defaultPosition={{x: 0, y: 0}}
             scale={1}
