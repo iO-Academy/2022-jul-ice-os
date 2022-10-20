@@ -1,9 +1,26 @@
 .aboutApplicationText {
-  margin: 0;
+  margin: 5px;
+}
+
+.aboutApplicationText a{
+  text-decoration: none;
+  color: #1B861D
 }
 
 .aboutApplicationContentContainer {
   height: 100%;
   width: 100%;
   overflow: auto;
+}
+
+hr.solid {
+  border-top: 2px solid #0460f6;
+}
+
+hr.dotted {
+  border-top: 1px dotted #0460f6;
+}
+
+.tech {
+  bottom: 100px;
 }
