@@ -31,7 +31,7 @@ const AppShortcuts = (props: AppShortcutsProps) => {
     }
     const handleClickSurf = () => {
         props.setSurfIsOpen(true)
-        props.setAboutIsRunning(true)
+        props.setSurfIsRunning(true)
         props.setSurfZIndex(props.maxZIndex + 1)
         props.setMaxZIndex(props.maxZIndex + 1)
     }
