@@ -20,7 +20,18 @@ interface DesktopProps  {
     setGifIsOpen: Function
     setGifIsRunning: Function
     gifIsOpen: boolean
+    mazZIndex: number
+    setMaxZIndex: Function
+    aboutZIndex: number
+    setAboutZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
+    surfZIndex: number
+    setSurfZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
+
 const Desktop = (props :DesktopProps): JSX.Element => {
     const[maxZIndex, setMaxZIndex] = useState(1);
 
