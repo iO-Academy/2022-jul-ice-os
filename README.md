@@ -10,6 +10,12 @@
 # General Information
 ### Ice OS
 
+
+
+
+The log off button on the start menu will redirect the user to a youtube video of Rick Astley - Never Gonna Give You Up (Official Music Video)
+The link in use is : https://www.youtube.com/watch?v=dQw4w9WgXcQ.  
+
 #### About App
 
 #### SurfWave Fury
