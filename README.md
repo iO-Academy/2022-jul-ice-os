@@ -10,7 +10,7 @@
 # General Information
 ### Ice OS
 
-
+Ice OS is a browser based OS inspired by Windows xp, the theme has be altered to fit an ice penguin aesthetic. 
 
 
 The log off button on the start menu will redirect the user to a youtube video of Rick Astley - Never Gonna Give You Up (Official Music Video)
