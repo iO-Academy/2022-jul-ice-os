@@ -12,6 +12,16 @@ interface StartButtonProps {
     setGifIsRunning: Function
     startMenuOpen: boolean
     setStartMenuOpen: Function
+    maxZIndex: number
+    setMaxZIndex: Function
+    aboutZIndex: number
+    setAboutZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
+    surfZIndex: number
+    setSurfZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
 
 const StartButton = (props: StartButtonProps): JSX.Element => {
@@ -38,20 +48,28 @@ const StartButton = (props: StartButtonProps): JSX.Element => {
     const openAboutApplication = () => {
         props.setAboutIsOpen(true);
         props.setAboutIsRunning(true)
+        props.setAboutZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
     const openMusicApplication = () => {
         props.setMusicIsOpen(true);
         props.setMusicIsRunning(true)
+        props.setMusicZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     const openGifApplication = () => {
         props.setGifIsOpen(true)
         props.setGifIsRunning(true)
+        props.setGifZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     const openSurfApplication = () => {
         props.setSurfIsOpen(true);
         props.setSurfIsRunning(true)
+        props.setSurfZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     return (

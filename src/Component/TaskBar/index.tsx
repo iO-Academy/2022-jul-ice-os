@@ -49,7 +49,18 @@ const TaskBar = (props: TaskBarProps): JSX.Element => {
                          setGifIsRunning={props.setGifIsRunning}
                          setGifIsOpen={props.setGifIsOpen}
                          startMenuOpen={props.startMenuOpen}
-                         setStartMenuOpen={props.setStartMenuOpen}/>
+                         setStartMenuOpen={props.setStartMenuOpen}
+                         maxZIndex={props.maxZIndex}
+                         setMaxZIndex={props.setMaxZIndex}
+                         aboutZIndex={props.aboutZIndex}
+                         setAboutZIndex={props.setAboutZIndex}
+                         gifZIndex={props.gifZIndex}
+                         setGifZIndex={props.setGifZIndex}
+                         surfZIndex={props.surfZIndex}
+                         setSurfZIndex={props.setSurfZIndex}
+                         musicZIndex={props.musicZIndex}
+                         setMusicZIndex={props.setMusicZIndex}/>
+
             <TaskDock setAboutIsOpen={props.setAboutIsOpen}
                       setAboutIsRunning={props.setAboutIsRunning}
                       surfIsOpen={props.surfIsOpen}

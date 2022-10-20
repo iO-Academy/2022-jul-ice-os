@@ -74,7 +74,7 @@ function App() {
                  surfZIndex={surfZIndex}
                  setSurfZIndex={setSurfZIndex}
                  musicZIndex={musicZIndex}
-                 setMusicZIndex={setMusicZIndex}/>
+                 setMusicZIndex={setMusicZIndex} />
     </div>
   );
 }
