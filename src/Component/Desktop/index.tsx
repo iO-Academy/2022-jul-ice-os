@@ -1,5 +1,6 @@
 import './Desktop.css'
 import AboutApplication from "../Applications/AboutApplication/AboutApplication";
+import SurfApplication from "../Applications/SurfApplication/SurfApplication";
 import MusicApplication from "../Applications/MusicApplication/MusicApplication";
 import GifApplication from "../Applications/GifApplication/GifApplication";
 import {useState} from "react";
@@ -9,6 +10,9 @@ interface DesktopProps  {
     aboutIsOpen: boolean
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    surfIsOpen: boolean
+    setSurfIsOpen: Function
+    setSurfIsRunning: Function
     musicIsOpen: boolean
     setMusicIsOpen: Function
     setMusicIsRunning: Function
@@ -42,6 +46,8 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 setMusicIsOpen={props.setMusicIsOpen}
                 setMusicIsRunning={props.setMusicIsRunning}
                 musicIsOpen={props.musicIsOpen} />
+            {props.surfIsOpen ? <SurfApplication setSurfIsOpen={props.setSurfIsOpen} setSurfIsRunning={props.setSurfIsRunning} />  : ""}
+            {props.surfIsOpen ? props.setSurfIsRunning(true) : ""}
         </main>
     )
 }

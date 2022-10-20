@@ -3,6 +3,10 @@ import './TaskDock.css'
 interface TaskDockProps {
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    setSurfIsOpen: Function
+    setSurfIsRunning: Function
+    surfIsOpen: boolean
+    surfIsRunning: boolean
     setGifIsRunning: Function
     setGifIsOpen: Function
     gifIsOpen: boolean
@@ -42,6 +46,15 @@ const TaskDock = (props :TaskDockProps) => {
         props.setGifIsOpen(true)
     }
 
+    const handleCloseSurf = () => {
+        props.setSurfIsOpen(false)
+        props.setSurfIsRunning(false)
+    }
+
+    const handleOpenSurf = () => {
+        props.setSurfIsOpen(true);
+    }
+
     return (
         <div className={"taskDock"}>
             {props.aboutIsRunning ?
@@ -51,7 +64,15 @@ const TaskDock = (props :TaskDockProps) => {
                     <button onClick={handleCloseAbout} className={"closeButtonTaskDock"}>X</button>
                 </div>
                 : "" }
-
+                
+            {props.surfIsRunning ?
+                <div className={"taskDockApplication"}>
+                    <img onClick={handleOpenSurf} className={"applicationIcon"} src={"../../../assets/Desktop/Images/surfingPenguinIcon.png"} alt={"About Icon"} />
+                    <p onClick={handleOpenSurf} className={"applicationText"}>Surfwave Fury</p>
+                    <button onClick={handleCloseSurf} className={"closeButtonTaskDock"}>X</button>
+                </div>
+                : "" }
+                
             {props.musicIsRunning ?
                 <div className={"taskDockApplication"}>
                     <img onClick={handleOpenMusic} className={"applicationIcon"} src={"../../../assets/Desktop/Images/musicPenguin.png"} alt={"Music Icon"} />

@@ -8,6 +8,8 @@ function App() {
 
     const [aboutIsOpen, setAboutIsOpen] = useState(false);
     const [aboutIsRunning, setAboutIsRunning] = useState(false);
+    const [surfIsOpen, setSurfIsOpen] = useState(false);
+    const [surfIsRunning, setSurfIsRunning] = useState(false);
     const [musicIsOpen, setMusicIsOpen] = useState(false);
     const [musicIsRunning, setMusicIsRunning] = useState(false);
     const [startMenuOpen, setStartMenuOpen] = useState(true);
@@ -19,11 +21,12 @@ function App() {
         <Desktop aboutIsOpen={aboutIsOpen}
                  setAboutIsRunning={setAboutIsRunning}
                  setAboutIsOpen={setAboutIsOpen}
-
+                 surfIsOpen={surfIsOpen}
+                 setSurfIsRunning={setSurfIsRunning}
+                 setSurfIsOpen={setSurfIsOpen}
                  musicIsOpen={musicIsOpen}
                  setMusicIsRunning={setMusicIsRunning}
                  setMusicIsOpen={setMusicIsOpen}
-
                  setGifIsOpen={setGifIsOpen}
                  setGifIsRunning={setGifIsRunning}
                  gifIsOpen={gifIsOpen}
@@ -31,19 +34,20 @@ function App() {
       
         <TaskBar setAboutIsOpen={setAboutIsOpen}
                  setAboutIsRunning={setAboutIsRunning}
+                 setSurfIsOpen={setSurfIsOpen}
+                 setSurfIsRunning={setSurfIsRunning}
                  aboutIsOpen={aboutIsOpen}
                  aboutIsRunning={aboutIsRunning}
-
+                 surfIsOpen={surfIsOpen}
+                 surfIsRunning={surfIsRunning}
                  setMusicIsOpen={setMusicIsOpen} 
                  setMusicIsRunning={setMusicIsRunning}
                  musicIsOpen={musicIsOpen}
                  musicIsRunning={musicIsRunning}
-
                  setGifIsRunning={setGifIsRunning}
                  setGifIsOpen={setGifIsOpen}
                  gifIsOpen={gifIsOpen}
                  gifIsRunning={gifIsRunning}
-
                  startMenuOpen={startMenuOpen}
                  setStartMenuOpen={setStartMenuOpen}/>
     </div>
