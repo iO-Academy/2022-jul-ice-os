@@ -9,6 +9,16 @@ interface AppShortcutsProps {
     setMusicIsRunning: Function
     setGifIsOpen: Function
     setGifIsRunning: Function
+    maxZIndex: number
+    setMaxZIndex: Function
+    aboutZIndex: number
+    setAboutZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
+    surfZIndex: number
+    setSurfZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
 
 const AppShortcuts = (props: AppShortcutsProps) => {
@@ -16,21 +26,28 @@ const AppShortcuts = (props: AppShortcutsProps) => {
     const handleClickAbout = () => {
         props.setAboutIsOpen(true)
         props.setAboutIsRunning(true)
-
+        props.setAboutZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
     const handleClickSurf = () => {
         props.setSurfIsOpen(true)
         props.setAboutIsRunning(true)
+        props.setSurfZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     const handleClickMusic = () => {
         props.setMusicIsOpen(true)
         props.setMusicIsRunning(true)
+        props.setMusicZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     const handleClickGif = () => {
         props.setGifIsOpen(true)
         props.setGifIsRunning(true)
+        props.setGifZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     return (

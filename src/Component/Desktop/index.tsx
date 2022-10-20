@@ -84,7 +84,18 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 setMusicIsRunning={props.setMusicIsRunning}
                 setGifIsOpen={props.setGifIsOpen}
                 setGifIsRunning={props.setGifIsRunning}
+                maxZIndex={props.maxZIndex}
+                setMaxZIndex={props.setMaxZIndex}
+                aboutZIndex={props.aboutZIndex}
+                setAboutZIndex={props.setAboutZIndex}
+                gifZIndex={props.gifZIndex}
+                setGifZIndex={props.setGifZIndex}
+                surfZIndex={props.surfZIndex}
+                setSurfZIndex={props.setSurfZIndex}
+                musicZIndex={props.musicZIndex}
+                setMusicZIndex={props.setMusicZIndex}
             />
+
         </main>
     )
 }

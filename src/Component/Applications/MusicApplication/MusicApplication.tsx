@@ -31,7 +31,7 @@ const MusicApplication = (props :MusicApplicationProps) => {
             defaultPosition={{x: 0, y: 0}}
             scale={1}
             bounds={'.desktop'}>
-            <div onClick={handleClick} style={{zIndex: props.musicZIndex}}>
+            <div className={"musicDraggable"} onClick={handleClick} style={{zIndex: props.musicZIndex}}>
                 <MusicHeader ApplicationName={"Music"}
                              ApplicationIcon={musicPenguin}
                              setMusicIsOpen={props.setMusicIsOpen}
