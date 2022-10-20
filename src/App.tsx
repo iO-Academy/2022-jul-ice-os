@@ -36,7 +36,7 @@ function App() {
                  setGifIsRunning={setGifIsRunning}
                  gifIsOpen={gifIsOpen}
                  setStartMenuOpen={setStartMenuOpen}
-                 mazZIndex={maxZIndex}
+                 maxZIndex={maxZIndex}
                  setMaxZIndex={setMaxZIndex}
                  aboutZIndex={aboutZIndex}
                  setAboutZIndex={setAboutZIndex}
@@ -45,7 +45,7 @@ function App() {
                  surfZIndex={surfZIndex}
                  setSurfZIndex={setSurfZIndex}
                  musicZIndex={musicZIndex}
-                 setMusicZIndex={setSurfZIndex}/>
+                 setMusicZIndex={setMusicZIndex}/>
       
         <TaskBar setAboutIsOpen={setAboutIsOpen}
                  setAboutIsRunning={setAboutIsRunning}

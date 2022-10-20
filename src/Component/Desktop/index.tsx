@@ -20,7 +20,7 @@ interface DesktopProps  {
     setGifIsOpen: Function
     setGifIsRunning: Function
     gifIsOpen: boolean
-    mazZIndex: number
+    maxZIndex: number
     setMaxZIndex: Function
     aboutZIndex: number
     setAboutZIndex: Function
@@ -33,7 +33,6 @@ interface DesktopProps  {
 }
 
 const Desktop = (props :DesktopProps): JSX.Element => {
-    const[maxZIndex, setMaxZIndex] = useState(1);
 
     const closeStartMenu = () => {
         props.setStartMenuOpen(true)
@@ -45,14 +44,18 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 setAboutIsOpen={props.setAboutIsOpen}
                 setAboutIsRunning={props.setAboutIsRunning}
                 aboutIsOpen={props.aboutIsOpen}
-                maxZIndex={maxZIndex}
-                setMaxZIndex={setMaxZIndex}/>
+                maxZIndex={props.maxZIndex}
+                setMaxZIndex={props.setMaxZIndex}
+                aboutZIndex={props.aboutZIndex}
+                setAboutZIndex={props.setAboutZIndex}/>
             <GifApplication
                 setGifIsRunning={props.setGifIsRunning}
                 setGifIsOpen={props.setGifIsOpen}
                 gifIsOpen={props.gifIsOpen}
-                maxZIndex={maxZIndex}
-                setMaxZIndex={setMaxZIndex} />
+                maxZIndex={props.maxZIndex}
+                setMaxZIndex={props.setMaxZIndex}
+                gifZIndex={props.gifZIndex}
+                setGifZIndex={props.setGifZIndex}/>
             <MusicApplication
                 setMusicIsOpen={props.setMusicIsOpen}
                 setMusicIsRunning={props.setMusicIsRunning}

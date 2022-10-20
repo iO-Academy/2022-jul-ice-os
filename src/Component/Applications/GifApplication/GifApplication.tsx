@@ -12,14 +12,15 @@ interface GifApplicationProps {
     gifIsOpen: boolean
     maxZIndex: number
     setMaxZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
 }
 
 let GifApplication = (props :GifApplicationProps) => {
 
-    const [gifZIndex, setGifZIndex] = useState(props.maxZIndex)
 
     const handleClick = () => {
-        setGifZIndex(props.maxZIndex + 1)
+        props.setGifZIndex(props.maxZIndex + 1)
         props.setMaxZIndex(props.maxZIndex + 1)
     }
 
@@ -30,7 +31,7 @@ let GifApplication = (props :GifApplicationProps) => {
            defaultPosition={{x: 0, y: 0}}
            scale={1}
            bounds={'.desktop'}>
-           <div className={"gifDraggable"} onClick={handleClick} style={{zIndex: gifZIndex}}>
+           <div className={"gifDraggable"} onClick={handleClick} style={{zIndex: props.gifZIndex}}>
                <GifHeader
                    ApplicationName={"Gif Application"}
                    ApplicationIcon={GifIcon}
