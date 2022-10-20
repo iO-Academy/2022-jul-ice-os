@@ -1,8 +1,8 @@
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: absolute;
+  align-items: start ;
+  margin: 0 0 5px 5px;
 }
 .app img{
   width: 50px;
@@ -10,7 +10,7 @@
 }
 
 .app p {
-  margin: 0;
+  margin: 0 0 0 10px;
   color: #FFFFFF;
 }
 

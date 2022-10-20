@@ -53,7 +53,10 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 surfIsOpen={props.surfIsOpen} />
             <AppShortcuts
                 setAboutIsOpen={props.setAboutIsOpen}
-                setAboutIsRunning={props.setAboutIsRunning}/>
+                setAboutIsRunning={props.setAboutIsRunning}
+                setSurfIsOpen={props.setSurfIsOpen}
+                setSurfIsRunning={props.setMusicIsRunning}
+            />
         </main>
     )
 }
