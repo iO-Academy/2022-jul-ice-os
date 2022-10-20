@@ -19,7 +19,7 @@ The log off button on the start menu will redirect the user to a YouTube video o
 The link in use is : https://www.youtube.com/watch?v=dQw4w9WgXcQ.
 
 #### About App
-Displays Ice OS READ.ME.
+Displays Ice OS README.Md's content.
 #### SurfWave Fury
 The SurfWave Fury App is a JavaScript game created by the Surfing Penguins in 2022. Please find the GitHub link here: https://github.com/iO-Academy/2022-july-keyboard-race.
 The application can be opened from the start menu on the Browser OS, to launch the application you need to open the start menu and then click on the SurfWave Fury button. Once the app has been launched you would be able to play the game, view the local leaderboard, and minimise and close the App.
@@ -69,8 +69,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Bug List
 * The feature to minimize and maximize applications on the header has not been implemented
-* The page will reload if you make edits.
 * You will also see any lint errors in the console.
+* The ReactPlayer package is causing issues with the display of the window when the splash screen appears when you stop the playlist. 
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
