@@ -1,0 +1,35 @@
+.handle {
+  width: 101%;
+  height: 30px;
+  background-color: #0460f6;
+  border: 2px solid #3894ff;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.headerTitle {
+  margin: 5px;
+  font-size: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  height: 25px;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+}
