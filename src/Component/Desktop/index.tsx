@@ -4,6 +4,7 @@ import SurfApplication from "../Applications/SurfApplication/SurfApplication";
 import MusicApplication from "../Applications/MusicApplication/MusicApplication";
 import GifApplication from "../Applications/GifApplication/GifApplication";
 import {useState} from "react";
+import AppShortcuts from "./AppShortcuts/AppShortcuts";
 
 
 interface DesktopProps  {
@@ -72,7 +73,18 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 maxZIndex={props.maxZIndex}
                 setMaxZIndex={props.setMaxZIndex}
                 surfZIndex={props.surfZIndex}
-                setSurfZIndex={props.setSurfZIndex}/>
+                setSurfZIndex={props.setSurfZIndex} />
+
+            <AppShortcuts
+                setAboutIsOpen={props.setAboutIsOpen}
+                setAboutIsRunning={props.setAboutIsRunning}
+                setSurfIsOpen={props.setSurfIsOpen}
+                setSurfIsRunning={props.setMusicIsRunning}
+                setMusicIsOpen={props.setMusicIsOpen}
+                setMusicIsRunning={props.setMusicIsRunning}
+                setGifIsOpen={props.setGifIsOpen}
+                setGifIsRunning={props.setGifIsRunning}
+            />
         </main>
     )
 }
