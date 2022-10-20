@@ -63,8 +63,8 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 musicIsOpen={props.musicIsOpen}
                 maxZIndex={props.maxZIndex}
                 setMaxZIndex={props.setMaxZIndex}
-                musicZIndex={props.surfZIndex}
-                setMusicZIndex={props.setSurfZIndex}/>
+                musicZIndex={props.musicZIndex}
+                setMusicZIndex={props.setMusicZIndex}/>
 
             <SurfApplication
                 setSurfIsOpen={props.setSurfIsOpen}
