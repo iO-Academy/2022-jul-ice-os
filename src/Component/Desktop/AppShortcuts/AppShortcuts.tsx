@@ -35,7 +35,7 @@ const AppShortcuts = (props: AppShortcutsProps) => {
 
     return (
         <div className={"appShortcuts"}>
-            <div className={"app"}><img onClick={handleClickAbout} src={"../../../assets/Desktop/Images/AboutImage.png"}
+            <div className={"app"}><img onDoubleClick={handleClickAbout} src={"../../../assets/Desktop/Images/AboutImage.png"}
                                         alt={"About Icon"}/>
                 <p>About</p>
             </div>
