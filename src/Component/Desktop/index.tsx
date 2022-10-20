@@ -46,8 +46,10 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 setMusicIsOpen={props.setMusicIsOpen}
                 setMusicIsRunning={props.setMusicIsRunning}
                 musicIsOpen={props.musicIsOpen} />
-            {props.surfIsOpen ? <SurfApplication setSurfIsOpen={props.setSurfIsOpen} setSurfIsRunning={props.setSurfIsRunning} />  : ""}
-            {props.surfIsOpen ? props.setSurfIsRunning(true) : ""}
+            <SurfApplication
+                setSurfIsOpen={props.setSurfIsOpen}
+                setSurfIsRunning={props.setSurfIsRunning}
+                surfIsOpen={props.surfIsOpen} />
         </main>
     )
 }

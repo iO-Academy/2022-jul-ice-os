@@ -8,6 +8,7 @@ import SurfHeader from "./SubComponents/Header/SurfHeader";
 interface SurfApplicationProps {
     setSurfIsOpen: Function
     setSurfIsRunning: Function
+    surfIsOpen: boolean
 }
 
 const SurfApplication = (props :SurfApplicationProps) => {
@@ -15,12 +16,12 @@ const SurfApplication = (props :SurfApplicationProps) => {
 
     return (
         <Draggable
+            defaultClassName={props.surfIsOpen ? "Surfdraggable" : "Surfdraggable hiden"}
             handle=".handle"
-            defaultPosition={{x: 50, y: 50}}
-            grid={[25, 25]}
+            defaultPosition={{x: 0, y: 0}}
             scale={1}
             bounds={'.desktop'}>
-            <div className={"Surfdraggable"}>
+            <div>
                 <SurfHeader ApplicationName={"Surfwave Fury"}
                         ApplicationIcon={SurfIcon}
                         setSurfIsOpen={props.setSurfIsOpen}
