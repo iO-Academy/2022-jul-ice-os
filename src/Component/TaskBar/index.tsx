@@ -2,6 +2,7 @@ import "./TaskBar.css"
 import StartButton from './StartButton'
 import UtilitiesHolder from "../UtilitiesHolder";
 import TaskDock from "./TaskDock/TaskDock";
+import {useState} from "react";
 
 interface TaskBarProps {
     setAboutIsOpen: Function
@@ -22,7 +23,19 @@ interface TaskBarProps {
     gifIsRunning: boolean
     startMenuOpen: boolean
     setStartMenuOpen: Function
+    maxZIndex: number
+    setMaxZIndex: Function
+    aboutZIndex: number
+    setAboutZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
+    surfZIndex: number
+    setSurfZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
+
+
 
 const TaskBar = (props: TaskBarProps): JSX.Element => {
     return (

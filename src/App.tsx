@@ -64,7 +64,17 @@ function App() {
                  gifIsOpen={gifIsOpen}
                  gifIsRunning={gifIsRunning}
                  startMenuOpen={startMenuOpen}
-                 setStartMenuOpen={setStartMenuOpen}/>
+                 setStartMenuOpen={setStartMenuOpen}
+                 maxZIndex={maxZIndex}
+                 setMaxZIndex={setMaxZIndex}
+                 aboutZIndex={aboutZIndex}
+                 setAboutZIndex={setAboutZIndex}
+                 gifZIndex={gifZIndex}
+                 setGifZIndex={setGifZIndex}
+                 surfZIndex={surfZIndex}
+                 setSurfZIndex={setSurfZIndex}
+                 musicZIndex={musicZIndex}
+                 setMusicZIndex={setMusicZIndex}/>
     </div>
   );
 }
