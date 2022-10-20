@@ -1,6 +1,6 @@
 import Draggable from 'react-draggable'
 import './SurfApplication.css'
-import Header from "./SubComponents/Header/Header";
+import Header from "./SubComponents/Header/SurfHeader";
 import SurfIcon from './Images/surfingPenguin.png';
 import {useState} from "react";
 import SurfApplicationContent from "./SurfApplicationContent/SurfApplicationContent";
