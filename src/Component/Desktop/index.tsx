@@ -2,6 +2,7 @@ import './Desktop.css'
 import AboutApplication from "../Applications/AboutApplication/AboutApplication";
 import MusicApplication from "../Applications/MusicApplication/MusicApplication";
 import GifApplication from "../Applications/GifApplication/GifApplication";
+import {useState} from "react";
 
 
 interface DesktopProps  {
@@ -17,6 +18,7 @@ interface DesktopProps  {
     gifIsOpen: boolean
 }
 const Desktop = (props :DesktopProps): JSX.Element => {
+    const[maxZIndex, setMaxZIndex] = useState(1);
 
     const closeStartMenu = () => {
         props.setStartMenuOpen(true)
@@ -27,11 +29,15 @@ const Desktop = (props :DesktopProps): JSX.Element => {
             <AboutApplication
                 setAboutIsOpen={props.setAboutIsOpen}
                 setAboutIsRunning={props.setAboutIsRunning}
-                aboutIsOpen={props.aboutIsOpen} />
+                aboutIsOpen={props.aboutIsOpen}
+                maxZIndex={maxZIndex}
+                setMaxZIndex={setMaxZIndex}/>
             <GifApplication
                 setGifIsRunning={props.setGifIsRunning}
                 setGifIsOpen={props.setGifIsOpen}
-                gifIsOpen={props.gifIsOpen} />
+                gifIsOpen={props.gifIsOpen}
+                maxZIndex={maxZIndex}
+                setMaxZIndex={setMaxZIndex} />
             <MusicApplication
                 setMusicIsOpen={props.setMusicIsOpen}
                 setMusicIsRunning={props.setMusicIsRunning}

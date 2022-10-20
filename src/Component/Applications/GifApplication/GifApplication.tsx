@@ -4,14 +4,18 @@ import {useState} from "react";
 import GifApplicationContent from "./GifApplicationContent/GifApplicationContent";
 import GifHeader from "./SubComponents/GifHeader/GifHeader";
 import GifIcon from "./Images/gifWatchingPenguin.png"
+import userEvent from "@testing-library/user-event";
 
 interface GifApplicationProps {
     setGifIsRunning: Function
     setGifIsOpen: Function
     gifIsOpen: boolean
+    maxZIndex: number
+    setMaxZIndex: Function
 }
 
 const GifApplication = (props :GifApplicationProps) => {
+
     return (
        <Draggable
            defaultClassName={props.gifIsOpen ? "gifDraggable" : "gifDraggable hiden"}
@@ -24,8 +28,8 @@ const GifApplication = (props :GifApplicationProps) => {
                    ApplicationName={"Gif Application"}
                    ApplicationIcon={GifIcon}
                    setGifIsOpen={props.setGifIsOpen}
-                   setGifIsRunning={props.setGifIsRunning} />
-               <GifApplicationContent />
+                   setGifIsRunning={props.setGifIsRunning}/>
+               <GifApplicationContent/>
            </div>
        </Draggable>
     )
