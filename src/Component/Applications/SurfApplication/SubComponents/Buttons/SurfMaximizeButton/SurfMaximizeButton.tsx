@@ -1,6 +1,6 @@
-import './MaximizeButton.css'
+import './SurfMaximizeButton.css'
 
-const MaximizeButton = () => {
+const SurfMaximizeButton = () => {
 
     const handleClose = () => {
 
@@ -13,4 +13,4 @@ const MaximizeButton = () => {
     )
 }
 
-export default  MaximizeButton
+export default  SurfMaximizeButton

@@ -1,9 +1,9 @@
 import Draggable from 'react-draggable'
 import './SurfApplication.css'
-import Header from "./SubComponents/Header/SurfHeader";
 import SurfIcon from './Images/surfingPenguin.png';
 import {useState} from "react";
 import SurfApplicationContent from "./SurfApplicationContent/SurfApplicationContent";
+import SurfHeader from "./SubComponents/Header/SurfHeader";
 
 interface SurfApplicationProps {
     setSurfIsOpen: Function
@@ -21,10 +21,10 @@ const SurfApplication = (props :SurfApplicationProps) => {
             scale={1}
             bounds={'.desktop'}>
             <div className={"Surfdraggable"}>
-                <Header ApplicationName={"Surfwave Fury"}
+                <SurfHeader ApplicationName={"Surfwave Fury"}
                         ApplicationIcon={SurfIcon}
-                        setAboutIsOpen={props.setSurfIsOpen}
-                        setAboutIsRunning={props.setSurfIsRunning}
+                        setSurfIsOpen={props.setSurfIsOpen}
+                        setSurfIsRunning={props.setSurfIsRunning}
                         setAboutMaximize={setAboutMaximize}
                         aboutMaximize={aboutMaximize}/>
                 <SurfApplicationContent />
