@@ -4,6 +4,7 @@ import SurfApplication from "../Applications/SurfApplication/SurfApplication";
 import MusicApplication from "../Applications/MusicApplication/MusicApplication";
 import GifApplication from "../Applications/GifApplication/GifApplication";
 import {useState} from "react";
+import AppShortcuts from "./AppShortcuts/AppShortcuts";
 
 
 interface DesktopProps  {
@@ -50,6 +51,9 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 setSurfIsOpen={props.setSurfIsOpen}
                 setSurfIsRunning={props.setSurfIsRunning}
                 surfIsOpen={props.surfIsOpen} />
+            <AppShortcuts
+                setAboutIsOpen={props.setAboutIsOpen}
+                setAboutIsRunning={props.setAboutIsRunning}/>
         </main>
     )
 }
