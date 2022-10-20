@@ -5,14 +5,9 @@
   * General Information of Music App
   * General Information of Random GIFs App
 * Technologies
-  * Ice OS
-    * Additional for SurfWave Fury
-    * Additional for Music App
-    * Additional for GIFs App
-* Setup 
+* Setup
 
-# General Information 
-
+# General Information
 ### Ice OS
 
 #### About App
@@ -26,6 +21,7 @@ The application can be opened from the start menu on the Browser OS, to launch t
 #### Random GIFs App
 
 # Technologies
+The project was made using the following:
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" height="40px" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40px" />
@@ -38,14 +34,22 @@ The application can be opened from the start menu on the Browser OS, to launch t
 * npm Screenfull
 
 # Setup
+To run this project, install locally using npm:
+
+    $ cd ../newDirectoryName 
+    $ npm install 
+    $ npm start
+
 
 ### React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+    npx create-react-app my-new-typescript-app --template typescript
 
-### `npm install` then `npm start`
+### To run
 
+#### `npm install` then `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
