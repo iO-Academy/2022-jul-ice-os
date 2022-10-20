@@ -10,7 +10,11 @@ function App() {
     const [aboutIsRunning, setAboutIsRunning] = useState(false);
     const [surfIsOpen, setSurfIsOpen] = useState(false);
     const [surfIsRunning, setSurfIsRunning] = useState(false);
+    const [musicIsOpen, setMusicIsOpen] = useState(false);
+    const [musicIsRunning, setMusicIsRunning] = useState(false);
     const [startMenuOpen, setStartMenuOpen] = useState(true);
+    const [gifIsOpen, setGifIsOpen] = useState(false)
+    const [gifIsRunning, setGifIsRunning] = useState(false)
 
   return (
     <div className="App" id="App">
@@ -20,7 +24,14 @@ function App() {
                  surfIsOpen={surfIsOpen}
                  setSurfIsRunning={setSurfIsRunning}
                  setSurfIsOpen={setSurfIsOpen}
+                 musicIsOpen={musicIsOpen}
+                 setMusicIsRunning={setMusicIsRunning}
+                 setMusicIsOpen={setMusicIsOpen}
+                 setGifIsOpen={setGifIsOpen}
+                 setGifIsRunning={setGifIsRunning}
+                 gifIsOpen={gifIsOpen}
                  setStartMenuOpen={setStartMenuOpen}/>
+      
         <TaskBar setAboutIsOpen={setAboutIsOpen}
                  setAboutIsRunning={setAboutIsRunning}
                  setSurfIsOpen={setSurfIsOpen}
@@ -29,6 +40,14 @@ function App() {
                  aboutIsRunning={aboutIsRunning}
                  surfIsOpen={surfIsOpen}
                  surfIsRunning={surfIsRunning}
+                 setMusicIsOpen={setMusicIsOpen} 
+                 setMusicIsRunning={setMusicIsRunning}
+                 musicIsOpen={musicIsOpen}
+                 musicIsRunning={musicIsRunning}
+                 setGifIsRunning={setGifIsRunning}
+                 setGifIsOpen={setGifIsOpen}
+                 gifIsOpen={gifIsOpen}
+                 gifIsRunning={gifIsRunning}
                  startMenuOpen={startMenuOpen}
                  setStartMenuOpen={setStartMenuOpen}/>
     </div>

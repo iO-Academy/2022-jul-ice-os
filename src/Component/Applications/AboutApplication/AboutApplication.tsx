@@ -8,6 +8,9 @@ import AboutApplicationContent from "./AboutApplicationContent/AboutApplicationC
 interface AboutApplicationProps {
     setAboutIsOpen: Function
     setAboutIsRunning: Function
+    aboutIsOpen: boolean
+    maxZIndex: number
+    setMaxZIndex: Function
 }
 
 const AboutApplication = (props :AboutApplicationProps) => {
@@ -15,9 +18,9 @@ const AboutApplication = (props :AboutApplicationProps) => {
 
     return (
         <Draggable
+            defaultClassName={props.aboutIsOpen ? "draggable" : "draggable hiden"}
             handle=".handle"
-            defaultPosition={{x: 50, y: 50}}
-            grid={[25, 25]}
+            defaultPosition={{x: 0, y: 0}}
             scale={1}
             bounds={'.desktop'}>
             <div className={"draggable"}>

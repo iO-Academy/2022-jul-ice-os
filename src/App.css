@@ -3,3 +3,12 @@
     overflow: hidden;
     font-family: Tahoma, serif;
 }
+
+.hiden {
+    visibility: hidden;
+    position: absolute;
+}
+
+.draggable {
+    position: absolute;
+}
