@@ -17,48 +17,74 @@ interface TaskDockProps {
     setMusicIsRunning: Function
     musicIsOpen: boolean
     musicIsRunning: boolean
+    maxZIndex: number
+    setMaxZIndex: Function
+    aboutZIndex: number
+    setAboutZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
+    surfZIndex: number
+    setSurfZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
 
 const TaskDock = (props :TaskDockProps) => {
 
-    const handleCloseAbout = () => {
+    const handleCloseAbout = (e: { stopPropagation: () => void }) => {
+        e.stopPropagation()
         props.setAboutIsOpen(false)
         props.setAboutIsRunning(false)
     }
-    const handleCloseMusic = () => {
+    const handleCloseMusic = (e: { stopPropagation: () => void }) => {
+        e.stopPropagation()
         props.setMusicIsOpen(false)
         props.setMusicIsRunning(false)
     }
 
-    const handleOpenAbout = () => {
+    const handleOpenAbout = (e: { stopPropagation: () => void }) => {
+        e.stopPropagation()
         props.setAboutIsOpen(true);
+        props.setAboutZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
-    const handleOpenMusic = () => {
+    const handleOpenMusic = (e: { stopPropagation: () => void }) => {
+        e.stopPropagation()
         props.setMusicIsOpen(true);
+        props.setMusicZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
-    const handleCloseGif = () => {
+    const handleCloseGif = (e: { stopPropagation: () => void }) => {
+        e.stopPropagation()
         props.setGifIsOpen(false)
         props.setGifIsRunning(false)
     }
 
-    const handleOpenGif = () => {
+    const handleOpenGif = (e: { stopPropagation: () => void }) => {
+        e.stopPropagation()
         props.setGifIsOpen(true)
+        props.setGifZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
-    const handleCloseSurf = () => {
+    const handleCloseSurf = (e: { stopPropagation: () => void }) => {
+        e.stopPropagation()
         props.setSurfIsOpen(false)
         props.setSurfIsRunning(false)
     }
 
-    const handleOpenSurf = () => {
+    const handleOpenSurf = (e: { stopPropagation: () => void }) => {
+        e.stopPropagation()
         props.setSurfIsOpen(true);
+        props.setSurfZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     return (
         <div className={"taskDock"}>
             {props.aboutIsRunning ?
-                <div className={"taskDockApplication"}>
+                <div className={"taskDockApplication"} onClick={handleOpenAbout}>
                     <img onClick={handleOpenAbout} className={"applicationIcon"} src={"../../../assets/Desktop/Images/AboutImage.png"} alt={"About Icon"} />
                     <p onClick={handleOpenAbout} className={"applicationText"}>About</p>
                     <button onClick={handleCloseAbout} className={"closeButtonTaskDock"}>X</button>
@@ -66,7 +92,7 @@ const TaskDock = (props :TaskDockProps) => {
                 : "" }
                 
             {props.surfIsRunning ?
-                <div className={"taskDockApplication"}>
+                <div className={"taskDockApplication"} onClick={handleOpenSurf}>
                     <img onClick={handleOpenSurf} className={"applicationIcon"} src={"../../../assets/Desktop/Images/surfingPenguinIcon.png"} alt={"About Icon"} />
                     <p onClick={handleOpenSurf} className={"applicationText"}>Surfwave Fury</p>
                     <button onClick={handleCloseSurf} className={"closeButtonTaskDock"}>X</button>
@@ -74,7 +100,7 @@ const TaskDock = (props :TaskDockProps) => {
                 : "" }
                 
             {props.musicIsRunning ?
-                <div className={"taskDockApplication"}>
+                <div className={"taskDockApplication"} onClick={handleOpenMusic}>
                     <img onClick={handleOpenMusic} className={"applicationIcon"} src={"../../../assets/Desktop/Images/musicPenguin.png"} alt={"Music Icon"} />
                     <p onClick={handleOpenMusic} className={"applicationText"}>Music</p>
                     <button onClick={handleCloseMusic} className={"closeButtonTaskDock"}>X</button>
@@ -82,7 +108,7 @@ const TaskDock = (props :TaskDockProps) => {
                 : "" }
         
             {props.gifIsRunning ?
-                <div className={"taskDockApplication"}>
+                <div className={"taskDockApplication"} onClick={handleOpenGif}>
                     <img onClick={handleOpenGif} className={"applicationIcon"} src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"} alt={"About Icon"} />
                     <p onClick={handleOpenGif} className={"applicationText"}>Gif</p>
                     <button onClick={handleCloseGif} className={"closeButtonTaskDock"}>X</button>

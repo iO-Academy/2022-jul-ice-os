@@ -2,6 +2,7 @@ import "./TaskBar.css"
 import StartButton from './StartButton'
 import UtilitiesHolder from "../UtilitiesHolder";
 import TaskDock from "./TaskDock/TaskDock";
+import {useState} from "react";
 
 interface TaskBarProps {
     setAboutIsOpen: Function
@@ -22,7 +23,19 @@ interface TaskBarProps {
     gifIsRunning: boolean
     startMenuOpen: boolean
     setStartMenuOpen: Function
+    maxZIndex: number
+    setMaxZIndex: Function
+    aboutZIndex: number
+    setAboutZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
+    surfZIndex: number
+    setSurfZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
+
+
 
 const TaskBar = (props: TaskBarProps): JSX.Element => {
     return (
@@ -52,7 +65,17 @@ const TaskBar = (props: TaskBarProps): JSX.Element => {
                       setMusicIsOpen={props.setMusicIsOpen}
                       setMusicIsRunning={props.setMusicIsRunning}
                       musicIsOpen={props.musicIsOpen}
-                      musicIsRunning={props.musicIsRunning}/>
+                      musicIsRunning={props.musicIsRunning}
+                      maxZIndex={props.maxZIndex}
+                      setMaxZIndex={props.setMaxZIndex}
+                      aboutZIndex={props.aboutZIndex}
+                      setAboutZIndex={props.setAboutZIndex}
+                      gifZIndex={props.gifZIndex}
+                      setGifZIndex={props.setGifZIndex}
+                      surfZIndex={props.surfZIndex}
+                      setSurfZIndex={props.setSurfZIndex}
+                      musicZIndex={props.musicZIndex}
+                      setMusicZIndex={props.setMusicZIndex}/>
             <UtilitiesHolder/>
         </div>
     )
