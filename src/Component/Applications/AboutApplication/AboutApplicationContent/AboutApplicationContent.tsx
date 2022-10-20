@@ -44,6 +44,14 @@ const AboutApplicationContent = () => {
                 <p>The Random GIFs application display randomly generated GIFs from GIPHY via api.
                 </p>
                 <hr className="dotted"></hr>
+                <h1>Made by</h1>
+                <hr className="solid"></hr>
+                <li>Jo Loe <a href="https://github.com/JVLoe">@JVLoe</a></li>
+                <li>Josh Bennet <a href="https://github.com/JoshuaBennet">@JoshuaBennet</a></li>
+                <li>Mike Oram <a href="https://github.com/SlothSan">@SlothSan</a></li>
+                <li>Nicolas Herbreteau<a href="https://github.com/nico-dev-it">@nico-dev-it</a></li>
+                <hr className="dotted"></hr>
+                <hr className="dotted"></hr>
             </div>
         </main>
     )
