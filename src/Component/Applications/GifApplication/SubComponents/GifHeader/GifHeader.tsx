@@ -23,7 +23,6 @@ const GifHeader = (props :HeaderProps) => {
                 <GifMinimizeButton setGifIsOpen={props.setGifIsOpen}/>
                 <GifMaximizeButton />
                 <GifCloseButton setGifIsOpen={props.setGifIsOpen} setGifIsRunning={props.setGifIsRunning} />
-
             </div>
         </header>
     )
