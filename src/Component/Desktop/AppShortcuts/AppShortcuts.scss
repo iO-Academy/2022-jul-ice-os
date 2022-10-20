@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: start ;
-  margin: 0 0 5px 5px;
+  margin: 0 0 10px 10px;
 }
 .app img{
   width: 50px;
@@ -16,4 +16,14 @@
 
 .app :hover {
   cursor: pointer;
+}
+
+#surfwaveIcon {
+  width: 75px;
+  height: 75px;
+  margin: 0 -3px 0 0;
+}
+
+#gifsicon{
+  padding: 2px;
 }
