@@ -56,6 +56,8 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 setAboutIsRunning={props.setAboutIsRunning}
                 setSurfIsOpen={props.setSurfIsOpen}
                 setSurfIsRunning={props.setMusicIsRunning}
+                setMusicIsOpen={props.setMusicIsOpen}
+                setMusicIsRunning={props.setMusicIsRunning}
             />
         </main>
     )

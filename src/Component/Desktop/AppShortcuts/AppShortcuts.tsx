@@ -5,6 +5,8 @@ interface AppShortcutsProps {
     setAboutIsRunning: Function
     setSurfIsOpen: Function
     setSurfIsRunning: Function
+    setMusicIsOpen: Function
+    setMusicIsRunning: Function
 }
 const AppShortcuts = (props:AppShortcutsProps) => {
 
@@ -13,6 +15,8 @@ const AppShortcuts = (props:AppShortcutsProps) => {
         props.setAboutIsRunning(true)
         props.setSurfIsOpen(true)
         props.setAboutIsRunning(true)
+        props.setMusicIsOpen(true)
+        props.setMusicIsRunning(true)
     }
 
     return (
@@ -22,6 +26,9 @@ const AppShortcuts = (props:AppShortcutsProps) => {
             </div>
             <div className={"app"}> <img onClick={handleClick} src={"../../../assets/Desktop/Images/surfingPenguinIcon.png"}alt={"Surfwave Fury Icon"}/>
                 <p>Surfwave Fury</p>
+            </div>
+            <div className={"app"}> <img onClick={handleClick} src={"../../../assets/Desktop/Images/musicPenguin.png"}alt={"Music Icon"}/>
+                <p>Music</p>
             </div>
         </div>
     )
