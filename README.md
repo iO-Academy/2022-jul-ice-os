@@ -59,7 +59,7 @@ Clone the repository with this bash command:
 
 ### `cd` into `2022-jul-ice-os`
 
-### `npm install` then `npm start`
+### `npm install` then `npm start` then `sass --watch .:.`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
