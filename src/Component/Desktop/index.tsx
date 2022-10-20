@@ -20,9 +20,19 @@ interface DesktopProps  {
     setGifIsOpen: Function
     setGifIsRunning: Function
     gifIsOpen: boolean
+    maxZIndex: number
+    setMaxZIndex: Function
+    aboutZIndex: number
+    setAboutZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
+    surfZIndex: number
+    setSurfZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
+
 const Desktop = (props :DesktopProps): JSX.Element => {
-    const[maxZIndex, setMaxZIndex] = useState(1);
 
     const closeStartMenu = () => {
         props.setStartMenuOpen(true)
@@ -34,22 +44,35 @@ const Desktop = (props :DesktopProps): JSX.Element => {
                 setAboutIsOpen={props.setAboutIsOpen}
                 setAboutIsRunning={props.setAboutIsRunning}
                 aboutIsOpen={props.aboutIsOpen}
-                maxZIndex={maxZIndex}
-                setMaxZIndex={setMaxZIndex}/>
+                maxZIndex={props.maxZIndex}
+                setMaxZIndex={props.setMaxZIndex}
+                aboutZIndex={props.aboutZIndex}
+                setAboutZIndex={props.setAboutZIndex}/>
             <GifApplication
                 setGifIsRunning={props.setGifIsRunning}
                 setGifIsOpen={props.setGifIsOpen}
                 gifIsOpen={props.gifIsOpen}
-                maxZIndex={maxZIndex}
-                setMaxZIndex={setMaxZIndex} />
+                maxZIndex={props.maxZIndex}
+                setMaxZIndex={props.setMaxZIndex}
+                gifZIndex={props.gifZIndex}
+                setGifZIndex={props.setGifZIndex}/>
             <MusicApplication
                 setMusicIsOpen={props.setMusicIsOpen}
                 setMusicIsRunning={props.setMusicIsRunning}
-                musicIsOpen={props.musicIsOpen} />
+                musicIsOpen={props.musicIsOpen}
+                maxZIndex={props.maxZIndex}
+                setMaxZIndex={props.setMaxZIndex}
+                musicZIndex={props.surfZIndex}
+                setMusicZIndex={props.setSurfZIndex}/>
+
             <SurfApplication
                 setSurfIsOpen={props.setSurfIsOpen}
                 setSurfIsRunning={props.setSurfIsRunning}
-                surfIsOpen={props.surfIsOpen} />
+                surfIsOpen={props.surfIsOpen}
+                maxZIndex={props.maxZIndex}
+                setMaxZIndex={props.setMaxZIndex}
+                surfZIndex={props.surfZIndex}
+                setSurfZIndex={props.setSurfZIndex}/>
         </main>
     )
 }

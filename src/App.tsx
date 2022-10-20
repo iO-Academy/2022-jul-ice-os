@@ -15,6 +15,11 @@ function App() {
     const [startMenuOpen, setStartMenuOpen] = useState(true);
     const [gifIsOpen, setGifIsOpen] = useState(false)
     const [gifIsRunning, setGifIsRunning] = useState(false)
+    const[maxZIndex, setMaxZIndex] = useState(1);
+    const [aboutZIndex, setAboutZIndex] = useState(maxZIndex)
+    const [gifZIndex, setGifZIndex] = useState(maxZIndex)
+    const [surfZIndex, setSurfZIndex] = useState(maxZIndex)
+    const [musicZIndex, setMusicZIndex] = useState(maxZIndex)
 
   return (
     <div className="App" id="App">
@@ -30,7 +35,17 @@ function App() {
                  setGifIsOpen={setGifIsOpen}
                  setGifIsRunning={setGifIsRunning}
                  gifIsOpen={gifIsOpen}
-                 setStartMenuOpen={setStartMenuOpen}/>
+                 setStartMenuOpen={setStartMenuOpen}
+                 maxZIndex={maxZIndex}
+                 setMaxZIndex={setMaxZIndex}
+                 aboutZIndex={aboutZIndex}
+                 setAboutZIndex={setAboutZIndex}
+                 gifZIndex={gifZIndex}
+                 setGifZIndex={setGifZIndex}
+                 surfZIndex={surfZIndex}
+                 setSurfZIndex={setSurfZIndex}
+                 musicZIndex={musicZIndex}
+                 setMusicZIndex={setMusicZIndex}/>
       
         <TaskBar setAboutIsOpen={setAboutIsOpen}
                  setAboutIsRunning={setAboutIsRunning}
@@ -49,7 +64,17 @@ function App() {
                  gifIsOpen={gifIsOpen}
                  gifIsRunning={gifIsRunning}
                  startMenuOpen={startMenuOpen}
-                 setStartMenuOpen={setStartMenuOpen}/>
+                 setStartMenuOpen={setStartMenuOpen}
+                 maxZIndex={maxZIndex}
+                 setMaxZIndex={setMaxZIndex}
+                 aboutZIndex={aboutZIndex}
+                 setAboutZIndex={setAboutZIndex}
+                 gifZIndex={gifZIndex}
+                 setGifZIndex={setGifZIndex}
+                 surfZIndex={surfZIndex}
+                 setSurfZIndex={setSurfZIndex}
+                 musicZIndex={musicZIndex}
+                 setMusicZIndex={setMusicZIndex}/>
     </div>
   );
 }

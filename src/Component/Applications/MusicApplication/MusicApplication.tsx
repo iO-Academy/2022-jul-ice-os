@@ -9,20 +9,29 @@ interface MusicApplicationProps {
     setMusicIsOpen: Function
     setMusicIsRunning: Function
     musicIsOpen: boolean
+    maxZIndex: number
+    setMaxZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
 
 const MusicApplication = (props :MusicApplicationProps) => {
     const [aboutMaximize, setAboutMaximize] = useState(false);
 
+    const handleClick = () => {
+        props.setMusicZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
+    }
+
     return (
 
         <Draggable
-            defaultClassName={props.musicIsOpen ? "musicDraggable" : "musicDraggable hiden"}
+            defaultClassName={props.musicIsOpen ? "musicDraggable" : "musicDraggable hidden"}
             handle=".musicHandle"
             defaultPosition={{x: 0, y: 0}}
             scale={1}
             bounds={'.desktop'}>
-            <div>
+            <div onClick={handleClick} style={{zIndex: props.musicZIndex}}>
                 <MusicHeader ApplicationName={"Music"}
                              ApplicationIcon={musicPenguin}
                              setMusicIsOpen={props.setMusicIsOpen}
