@@ -14,7 +14,7 @@ interface AboutApplicationProps {
 }
 
 const AboutApplication = (props :AboutApplicationProps) => {
-    const [aboutMaximize, setAboutMaximize] = useState(false);
+    const [aboutMaximize, setAboutMaximize] = useState(false);  
 
     return (
         <Draggable

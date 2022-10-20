@@ -14,7 +14,7 @@ interface GifApplicationProps {
     setMaxZIndex: Function
 }
 
-const GifApplication = (props :GifApplicationProps) => {
+let GifApplication = (props :GifApplicationProps) => {
 
     return (
        <Draggable
@@ -23,7 +23,7 @@ const GifApplication = (props :GifApplicationProps) => {
            defaultPosition={{x: 50, y: 50}}
            scale={1}
            bounds={'.desktop'}>
-           <div className={"gifDraggable"}>
+           <div className={"gifDraggable"} >
                <GifHeader
                    ApplicationName={"Gif Application"}
                    ApplicationIcon={GifIcon}
