@@ -65,7 +65,17 @@ const TaskBar = (props: TaskBarProps): JSX.Element => {
                       setMusicIsOpen={props.setMusicIsOpen}
                       setMusicIsRunning={props.setMusicIsRunning}
                       musicIsOpen={props.musicIsOpen}
-                      musicIsRunning={props.musicIsRunning}/>
+                      musicIsRunning={props.musicIsRunning}
+                      maxZIndex={props.maxZIndex}
+                      setMaxZIndex={props.setMaxZIndex}
+                      aboutZIndex={props.aboutZIndex}
+                      setAboutZIndex={props.setAboutZIndex}
+                      gifZIndex={props.gifZIndex}
+                      setGifZIndex={props.setGifZIndex}
+                      surfZIndex={props.surfZIndex}
+                      setSurfZIndex={props.setSurfZIndex}
+                      musicZIndex={props.musicZIndex}
+                      setMusicZIndex={props.setMusicZIndex}/>
             <UtilitiesHolder/>
         </div>
     )

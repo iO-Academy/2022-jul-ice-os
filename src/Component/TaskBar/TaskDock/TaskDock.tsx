@@ -17,6 +17,16 @@ interface TaskDockProps {
     setMusicIsRunning: Function
     musicIsOpen: boolean
     musicIsRunning: boolean
+    maxZIndex: number
+    setMaxZIndex: Function
+    aboutZIndex: number
+    setAboutZIndex: Function
+    gifZIndex: number
+    setGifZIndex: Function
+    surfZIndex: number
+    setSurfZIndex: Function
+    musicZIndex: number
+    setMusicZIndex: Function
 }
 
 const TaskDock = (props :TaskDockProps) => {
@@ -32,9 +42,13 @@ const TaskDock = (props :TaskDockProps) => {
 
     const handleOpenAbout = () => {
         props.setAboutIsOpen(true);
+        props.setAboutZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
     const handleOpenMusic = () => {
         props.setMusicIsOpen(true);
+        props.setMusicZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     const handleCloseGif = () => {
@@ -44,6 +58,8 @@ const TaskDock = (props :TaskDockProps) => {
 
     const handleOpenGif = () => {
         props.setGifIsOpen(true)
+        props.setGifZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     const handleCloseSurf = () => {
@@ -53,6 +69,8 @@ const TaskDock = (props :TaskDockProps) => {
 
     const handleOpenSurf = () => {
         props.setSurfIsOpen(true);
+        props.setSurfZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
     }
 
     return (
