@@ -39,16 +39,16 @@ const AppShortcuts = (props: AppShortcutsProps) => {
                                         alt={"About Icon"}/>
                 <p>About</p>
             </div>
-            <div className={"app"}><img onClick={handleClickSurf} id={"surfwaveIcon"}
+            <div className={"app"}><img onDoubleClick={handleClickSurf} id={"surfwaveIcon"}
                                         src={"../../../assets/Desktop/Images/surfingPenguinIcon.png"}
                                         alt={"Surfwave Fury Icon"}/>
                 <p>Surfwave Fury</p>
             </div>
-            <div className={"app"}><img onClick={handleClickMusic}
+            <div className={"app"}><img onDoubleClick={handleClickMusic}
                                         src={"../../../assets/Desktop/Images/musicPenguin.png"} alt={"Music Icon"}/>
                 <p>Music</p>
             </div>
-            <div className={"app"}><img onClick={handleClickGif} id={"gifsicon"}
+            <div className={"app"}><img onDoubleClick={handleClickGif} id={"gifsicon"}
                                         src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"} alt={"Gif Icon"}/>
                 <p>Gifs</p>
             </div>
