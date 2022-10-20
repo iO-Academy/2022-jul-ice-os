@@ -8,7 +8,7 @@ const AboutApplicationContent = () => {
                 <hr className="solid"></hr>
                 <p>The project was made using the following:</p>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-                     height="40px"/>
+                     />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                      height="40px"/>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40px"/>
