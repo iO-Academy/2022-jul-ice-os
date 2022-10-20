@@ -19,6 +19,7 @@ const AboutApplicationContent = () => {
                 <h2>Ice OS</h2>
                 <p> Ice OS is a browser based OS inspired by Windows xp, the theme has be altered to fit an ice penguin
                     aesthetic.</p>
+                <p>Ice OS features include the applications: About, Surfwave Fury, Music, and Random GIFs. All Apps are able to resize, drag, close and minimize. The taskbar displays a start menu that lists all applications, a clock in the bottom right along with a fullscreen button, and stores open applications.</p>
                 <p>The log off button on the start menu will redirect the user to a youtube video of Rick Astley - Never
                     Gonna Give You Up (Official Music Video) The video in use is :
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> here</a>.</p>
@@ -49,7 +50,7 @@ const AboutApplicationContent = () => {
                 <li>Jo Loe <a href="https://github.com/JVLoe">@JVLoe</a></li>
                 <li>Josh Bennet <a href="https://github.com/JoshuaBennet">@JoshuaBennet</a></li>
                 <li>Mike Oram <a href="https://github.com/SlothSan">@SlothSan</a></li>
-                <li>Nicolas Herbreteau<a href="https://github.com/nico-dev-it">@nico-dev-it</a></li>
+                <li>Nicolas Herbreteau <a href="https://github.com/nico-dev-it">@nico-dev-it</a></li>
                 <hr className="dotted"></hr>
                 <hr className="dotted"></hr>
             </div>
