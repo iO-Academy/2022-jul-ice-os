@@ -15,6 +15,14 @@ interface AboutApplicationProps {
 
 const AboutApplication = (props :AboutApplicationProps) => {
     const [aboutMaximize, setAboutMaximize] = useState(false);
+    const [aboutZIndex, setAboutZIndex] = useState(props.maxZIndex)
+
+    const handleClick = () => {
+        setAboutZIndex(props.maxZIndex + 1)
+        props.setMaxZIndex(props.maxZIndex + 1)
+    }
+
+
 
     return (
         <Draggable
@@ -23,7 +31,7 @@ const AboutApplication = (props :AboutApplicationProps) => {
             defaultPosition={{x: 0, y: 0}}
             scale={1}
             bounds={'.desktop'}>
-            <div className={"draggable"}>
+            <div className={"draggable"} onClick={handleClick} style={{zIndex: aboutZIndex}}>
               <Header ApplicationName={"About"}
                       ApplicationIcon={AboutIcon}
                       setAboutIsOpen={props.setAboutIsOpen}
