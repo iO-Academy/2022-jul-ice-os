@@ -66,14 +66,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### Bug List
 * The feature to minimize and maximize applications on the header has not been implemented
 * You will also see any lint errors in the console.
-* The ReactPlayer package is causing issues with the display of the window when the splash screen appears when you stop the playlist. 
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Made by
-- Jo Loe @JVLoe
-- Josh Bennet @JoshuaBennet
-- Mike Oram @SlothSan
-- Nicolas Herbreteau @nico-dev-it
+* Jo Loe [@JVLoe](https://github.com/JVLoe)
+* Josh Bennet [@JoshuaBennet](https://github.com/JoshuaBennet)
+* Mike Oram [@SlothSan](https://github.com/SlothSan)
+* Nicolas Herbreteau [@nico-dev-it](https://github.com/nico-dev-it)
