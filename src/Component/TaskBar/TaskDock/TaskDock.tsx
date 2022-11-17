@@ -85,7 +85,7 @@ const TaskDock = (props :TaskDockProps) => {
         <div className={"taskDock"}>
             {props.aboutIsRunning ?
                 <div className={"taskDockApplication"} onClick={handleOpenAbout}>
-                    <img onClick={handleOpenAbout} className={"applicationIcon"} src={"../../../assets/Desktop/Images/AboutImage.png"} alt={"About Icon"} />
+                    <img onClick={handleOpenAbout} className={"applicationIcon"} src={process.env.PUBLIC_URL + "/assets/Desktop/Images/AboutImage.png"} alt={"About Icon"} />
                     <p onClick={handleOpenAbout} className={"applicationText"}>About</p>
                     <button onClick={handleCloseAbout} className={"closeButtonTaskDock"}>X</button>
                 </div>
@@ -93,7 +93,7 @@ const TaskDock = (props :TaskDockProps) => {
                 
             {props.surfIsRunning ?
                 <div className={"taskDockApplication"} onClick={handleOpenSurf}>
-                    <img onClick={handleOpenSurf} className={"applicationIcon"} src={"../../../assets/Desktop/Images/surfingPenguinIcon.png"} alt={"About Icon"} />
+                    <img onClick={handleOpenSurf} className={"applicationIcon"} src={process.env.PUBLIC_URL + "/assets/Desktop/Images/surfingPenguinIcon.png"} alt={"About Icon"} />
                     <p onClick={handleOpenSurf} className={"applicationText"}>Surfwave Fury</p>
                     <button onClick={handleCloseSurf} className={"closeButtonTaskDock"}>X</button>
                 </div>
@@ -101,7 +101,7 @@ const TaskDock = (props :TaskDockProps) => {
                 
             {props.musicIsRunning ?
                 <div className={"taskDockApplication"} onClick={handleOpenMusic}>
-                    <img onClick={handleOpenMusic} className={"applicationIcon"} src={"../../../assets/Desktop/Images/musicPenguin.png"} alt={"Music Icon"} />
+                    <img onClick={handleOpenMusic} className={"applicationIcon"} src={process.env.PUBLIC_URL + "/assets/Desktop/Images/musicPenguin.png"} alt={"Music Icon"} />
                     <p onClick={handleOpenMusic} className={"applicationText"}>Music</p>
                     <button onClick={handleCloseMusic} className={"closeButtonTaskDock"}>X</button>
                 </div>
@@ -109,7 +109,7 @@ const TaskDock = (props :TaskDockProps) => {
         
             {props.gifIsRunning ?
                 <div className={"taskDockApplication"} onClick={handleOpenGif}>
-                    <img onClick={handleOpenGif} className={"applicationIcon"} src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"} alt={"About Icon"} />
+                    <img onClick={handleOpenGif} className={"applicationIcon"} src={process.env.PUBLIC_URL + "/assets/Desktop/Images/gifWatchingPenguin.png"} alt={"About Icon"} />
                     <p onClick={handleOpenGif} className={"applicationText"}>Gif</p>
                     <button onClick={handleCloseGif} className={"closeButtonTaskDock"}>X</button>
                 </div>
