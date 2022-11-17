@@ -52,21 +52,21 @@ const AppShortcuts = (props: AppShortcutsProps) => {
 
     return (
         <div className={"appShortcuts"}>
-            <div className={"app"}><img onDoubleClick={handleClickAbout} src={"../../../assets/Desktop/Images/AboutImage.png"}
+            <div className={"app"}><img onDoubleClick={handleClickAbout} src={process.env.PUBLIC_URL + "/assets/Desktop/Images/aboutImage.png"}
                                         alt={"About Icon"}/>
                 <p>About</p>
             </div>
             <div className={"app"}><img onDoubleClick={handleClickSurf} id={"surfwaveIcon"}
-                                        src={"../../../assets/Desktop/Images/surfingPenguinIcon.png"}
+                                        src={process.env.PUBLIC_URL + "/assets/Desktop/Images/surfingPenguinIcon.png"}
                                         alt={"Surfwave Fury Icon"}/>
                 <p>Surfwave Fury</p>
             </div>
             <div className={"app"}><img onDoubleClick={handleClickMusic}
-                                        src={"../../../assets/Desktop/Images/musicPenguin.png"} alt={"Music Icon"}/>
+                                        src={process.env.PUBLIC_URL + "/assets/Desktop/Images/musicPenguin.png"} alt={"Music Icon"}/>
                 <p>Music</p>
             </div>
             <div className={"app"}><img onDoubleClick={handleClickGif} id={"gifsicon"}
-                                        src={"../../../assets/Desktop/Images/gifWatchingPenguin.png"} alt={"Gif Icon"}/>
+                                        src={process.env.PUBLIC_URL + "/assets/Desktop/Images/gifWatchingPenguin.png"} alt={"Gif Icon"}/>
                 <p>Gifs</p>
             </div>
         </div>
